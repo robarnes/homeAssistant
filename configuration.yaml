@@ -1,0 +1,246 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 45.178800
+  longitude: -93.732480
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 299
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/Chicago
+  temperature_unit: F
+  customize: !include customize.yaml
+
+zone:
+  name: Home
+  latitude: 45.178800
+  longitude: -93.732480
+  icon: mdi:home
+  radius: 500
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+emulated_hue:
+  type: alexa
+  listen_port: 8300
+  expose_by_default: false
+  host_ip: 192.168.0.150
+
+http:
+  # Uncomment this to add a password (recommended!)
+  # api_password: PASSWORD
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+zwave:
+  usb_path: /dev/ttyACM0
+#  config_path: /srv/hass/hass_venv/lib/python3.4/site-packages/libopenzwave-0.3.1-py3.4-linux-armv7l.egg/config
+
+camera:
+  - platform: mjpeg
+    mjpeg_url: http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper
+    name: Front Door
+    #username: admin
+    #password: !secret camera_password 
+
+twilio:
+  account_sid: !secret twilio_account_sid
+  auth_token: !secret twilio_auth_token
+
+notify:
+  - name: twilio
+    platform: twilio_sms
+    from_number: +19133254454
+
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  client_id: home-assistant-1
+  username: mosquitto 
+  password: !secret mosquitto_password
+
+switch:
+  - platform: mqtt
+    name: "Doorbell"
+    state_topic: "/esp/doorbell/state"
+    command_topic: "/esp/doorbell/set"
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimisitic: False
+  - platform: mqtt
+    name: "Garage Door One"
+    state_topic: "/esp/garageDoorOne/state"
+    command_topic: "/esp/garageDoorOne/set"
+    payload_on: "1"
+    payload_off: "0"
+    optimisitic: False
+  - platform: mqtt
+    name: "Garage Door Two"
+    state_topic: "/esp/garageDoorTwo/state"
+    command_topic: "/esp/garageDoorTwo/set"
+    payload_on: "1"
+    payload_off: "0"
+    optimisitic: False
+  - platform: mqtt
+    name: "Lake Pump"
+    state_topic: "/esp/lakePump/state"
+    command_topic: "/esp/lakePump/set"
+    payload_on: "1"
+    payload_off: "0"
+    optimisitic: False
+
+binary_sensor:
+  - platform: mqtt
+    state_topic: "/esp/garageDoorOne/state"
+    name: "Garage Door One"
+    qos: 0
+    payload_on: "1"
+    payload_off: "0"
+    device_class: opening
+  - platform: mqtt
+    state_topic: "/esp/garageDoorTwo/state"
+    name: "Garage Door Two"
+    qos: 0
+    payload_on: "1"
+    payload_off: "0"
+    device_class: opening
+
+light:
+  - platform: mqtt
+    name: 'Family Room Status Light'
+    state_topic: '/upstairsFamilyRoom/statusLight/light/status'
+    command_topic: '/upstairsFamilyRoom/statusLight/light/set'
+    brightness_state_topic: '/upstairsFamilyRoom/statusLight/brightness/status'
+    brightness_command_topic: '/upstairsFamilyRoom/statusLight/brightness/set'
+    rgb_state_topic: '/upstairsFamilyRoom/statusLight/rgb/status'
+    rgb_command_topic: '/upstairsFamilyRoom/statusLight/rgb/set'
+    brightness_scale: 100
+    optimistic: false
+
+automation:
+  - id: textOnDoorbellPress
+    alias: Text on doorbell press
+    initial_state: 'on'
+    hide_entity: True
+    trigger:
+      - platform: mqtt
+        topic: "/esp/doorbell/state"
+        payload: 'ON'
+    action:
+      service: notify.twilio
+      data:
+        message: 'Doorbell : http://bit.ly/2oLoY8p'
+        target:
+          - +16512692736
+          - +17634387841
+          - +17634982723
+          - +17634982721
+  -  id: turnLakePumpOffTimer
+     alias: Turn Lake Pump off Timer
+     initial_state: 'on'
+     hide_entity: True
+     trigger:
+       platform: state
+       entity_id: switch.lake_pump
+       to: 'on'
+     action:
+       - delay:
+           minutes: 90
+       - service: homeassistant.turn_off
+         entity_id: swift.lake_pump
+  -  id: turnPorchLampOffTimer
+     alias: Turn Porch Lamp off Timer
+     initial_state: 'on'
+     hide_entity: True
+     trigger:
+       platform: state
+       entity_id: light.__level_3_0
+       to: 'on'
+     action:
+       - delay:
+           minutes: 120
+       - service: homeassistant.turn_off
+         entity_id: light.__level_3_0
+  -  id: turnPorchLampOnAtSunset
+     alias : Turn Porch Lamp on at Sunset
+     initial_state: 'on'
+     hide_entity: True
+     trigger:
+       platform: sun
+       event: sunset
+       offset: "-00:10:00"
+     action:
+       service: homeassistant.turn_on
+       entity_id: light.__level_3_0
+
+group:
+# Creating some tabs
+  default_view:
+    view: yes
+    icon: mdi:home
+    entities:
+      -  group.upstairs
+      -  group.downstairs
+      -  group.outside
+      -  group.cameras
+      # Add some badges
+      -  binary_sensor.garage_door_one
+      -  binary_sensor.garage_door_two
+      -  sensor.zooz_zse40_4in1_sensor_temperature_4_1
+      -  sensor.zooz_zse40_4in1_sensor_relative_humidity_4_5
+  misc:
+    name: Misc
+    view: yes
+    entities:
+      -  group.zwaveDevices
+# Groups to put on tabs
+  upstairs:
+    name: Upstairs
+    entities:
+      -  switch.zooz_zen07_mini_plug_switch_2_0
+      -  light.family_room_status_light
+  downstairs:
+    name: Downstairs
+    entities:
+  outside:
+    name: Outside
+    control: hidden
+    entities:
+      -  light.__level_3_0
+      -  switch.__switch_5_0
+      -  light.__level_6_0
+      -  switch.lake_pump
+      -  switch.garage_door_one
+      -  switch.garage_door_two
+  zwaveDevices:
+    name: zwave Devices
+    entities:
+      -  zwave.aeotec_zw090_zstick_gen5_us_1
+      -  zwave.zooz_zen07_mini_plug_2
+      -  zwave.__3
+  cameras:
+    name: cameras
+    entities:
+      - camera.front_door   
