@@ -12,6 +12,9 @@ homeassistant:
   time_zone: America/Chicago
   temperature_unit: F
   customize: !include customize.yaml
+  whitelist_external_dirs:
+    - '/tmp'
+#	 Allow for camera snaps to be stored
 
 zone:
   name: Home
