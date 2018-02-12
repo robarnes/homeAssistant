@@ -1,8 +1,8 @@
 switch.zooz_zen07_mini_plug_switch:
   friendly_name: Aidan LED Wall
   icon: mdi:lightbulb
-  #emulated_hue: true
-  #emulated_hue_name: "living room lamp"
+  emulated_hue: true
+  emulated_hue_name: "Wall"
 switch.garage_door_one:
   icon: mdi:garage
 switch.garage_door_two:

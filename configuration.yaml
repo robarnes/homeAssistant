@@ -29,11 +29,10 @@ config:
 # Enables the frontend
 frontend:
 
-#emulated_hue:
-#  type: alexa
-#  listen_port: 8300
-#  expose_by_default: false
-#  host_ip: 192.168.0.150
+emulated_hue:
+  # listen_port: 8300
+  expose_by_default: false
+  host_ip: 192.168.0.150
 
 http:
   # Uncomment this to add a password (recommended!)
@@ -63,15 +62,8 @@ sun:
 
 zwave:
   usb_path: /dev/ttyACM0
-  device_config:
-    light.level:
-      polling_intensity: 1
-      refresh_value: true
-    light.level_2:
-      polling_intensity: 1
-      refresh_value: true
 
-#camera:
+camera:
   - platform: mjpeg
     mjpeg_url: http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper
     name: Front Door
