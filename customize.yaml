@@ -1,7 +1,7 @@
 switch.zooz_zen07_mini_plug_switch:
   friendly_name: Aidan LED Wall
   icon: mdi:lightbulb
-  emulated_hue: true
+  emulated_hue_hidden: false
   emulated_hue_name: "Wall"
 switch.garage_door_one:
   icon: mdi:garage
