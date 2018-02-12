@@ -29,11 +29,11 @@ config:
 # Enables the frontend
 frontend:
 
-emulated_hue:
-  type: alexa
-  listen_port: 8300
-  expose_by_default: false
-  host_ip: 192.168.0.150
+#emulated_hue:
+#  type: alexa
+#  listen_port: 8300
+#  expose_by_default: false
+#  host_ip: 192.168.0.150
 
 http:
   # Uncomment this to add a password (recommended!)
@@ -49,7 +49,8 @@ discovery:
 conversation:
 
 recorder:
-  db_url: 'mysql://hass:killians1@macmini/homeassistant'
+  db_url: 'mysql://hass:killians1@macmini.widgetninja.net/homeassistant'
+  purge_keep_days: 720
 
 # Enables support for tracking state changes over time.
 history:
@@ -62,9 +63,15 @@ sun:
 
 zwave:
   usb_path: /dev/ttyACM0
-#  config_path: /srv/hass/hass_venv/lib/python3.4/site-packages/libopenzwave-0.3.1-py3.4-linux-armv7l.egg/config
+  device_config:
+    light.level:
+      polling_intensity: 1
+      refresh_value: true
+    light.level_2:
+      polling_intensity: 1
+      refresh_value: true
 
-camera:
+#camera:
   - platform: mjpeg
     mjpeg_url: http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper
     name: Front Door
@@ -225,8 +232,8 @@ group:
   upstairs:
     name: Upstairs
     entities:
-      -  switch.zooz_zen07_mini_plug_switch_2_0
-      -  light.family_room_status_light
+      -  switch.zooz_zen07_mini_plug_switch
+#		Aidan LED Wall
   downstairs:
     name: Downstairs
     entities:
@@ -234,18 +241,21 @@ group:
     name: Outside
     control: hidden
     entities:
-      -  light.__level_3_0
-      -  switch.__switch_5_0
-      -  light.__level_6_0
-      -  switch.lake_pump
       -  switch.garage_door_one
       -  switch.garage_door_two
+      -  light.level
+#		Front Porch
+      -  light.level_2
+#		Lake Lamp
+      -  switch.switch
+#		Backyard Floods
   zwaveDevices:
     name: zwave Devices
     entities:
-      -  zwave.aeotec_zw090_zstick_gen5_us_1
-      -  zwave.zooz_zen07_mini_plug_2
-      -  zwave.__3
+      -  zwave.aeotec_zw090_zstick_gen5_us
+      -  zwave.zooz_zen07_mini_plug
+      -  zwave.ge_14292_inwall_smart_toggle_switch
+      -  zwave.ge_zw7101_smart_led_light_bulb_ze26i
   cameras:
     name: cameras
     entities:
