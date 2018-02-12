@@ -181,13 +181,13 @@ automation:
      hide_entity: True
      trigger:
        platform: state
-       entity_id: light.__level_3_0
+       entity_id: light.level 
        to: 'on'
      action:
        - delay:
-           minutes: 120
+           minutes: 240
        - service: homeassistant.turn_off
-         entity_id: light.__level_3_0
+         entity_id: light.level
   -  id: turnPorchLampOnAtSunset
      alias : Turn Porch Lamp on at Sunset
      initial_state: 'on'
@@ -198,7 +198,7 @@ automation:
        offset: "-00:10:00"
      action:
        service: homeassistant.turn_on
-       entity_id: light.__level_3_0
+       entity_id: light.level
 
 group:
 # Creating some tabs
