@@ -52,3 +52,5 @@
     action:
       service: homeassistant.turn_on
       entity_id: light.level
+# check out this site for alerts - IE garage door open
+# https://home-assistant.io/components/alert/
