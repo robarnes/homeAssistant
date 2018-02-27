@@ -1,0 +1,51 @@
+# Creating some tabs
+default_view:
+  view: yes
+  icon: mdi:home
+  entities:
+    -  group.upstairs
+    -  group.downstairs
+    -  group.outside
+    -  group.cameras
+    # Add some badges
+    -  binary_sensor.garage_door_one
+    -  binary_sensor.garage_door_two
+    -  sensor.zooz_zse40_4in1_sensor_temperature_4_1
+    -  sensor.zooz_zse40_4in1_sensor_relative_humidity_4_5
+misc:
+  name: Misc
+  view: yes
+  entities:
+    -  group.zwaveDevices
+# Groups to put on tabs
+upstairs:
+  name: Upstairs
+  entities:
+    -  switch.zooz_zen07_mini_plug_switch
+#		Aidan LED Wall
+downstairs:
+  name: Downstairs
+  entities:
+outside:
+  name: Outside
+  control: hidden
+  entities:
+    -  switch.garage_door_one
+    -  switch.garage_door_two
+    -  light.level
+#		Front Porch
+    -  light.level_2
+#		Lake Lamp
+    -  switch.switch
+#		Backyard Floods
+zwaveDevices:
+  name: zwave Devices
+  entities:
+    -  zwave.aeotec_zw090_zstick_gen5_us
+    -  zwave.zooz_zen07_mini_plug
+    -  zwave.ge_14292_inwall_smart_toggle_switch
+    -  zwave.ge_zw7101_smart_led_light_bulb_ze26i
+cameras:
+  name: cameras
+  entities:
+    - camera.front_door   
