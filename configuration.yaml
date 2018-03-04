@@ -12,7 +12,7 @@ homeassistant:
   time_zone: America/Chicago
   temperature_unit: F
   customize: !include customize.yaml
-  automation: !include automation.yaml
+  # automation: !include automations.yaml
   whitelist_external_dirs:
     - '/tmp'
 #	 Allow for camera snaps to be stored
@@ -52,7 +52,7 @@ discovery:
 conversation:
 
 recorder:
-  db_url: 'mysql://hass:killians1@macmini.widgetninja.net/homeassistant'
+  db_url: 'mysql://hass:killians1@192.168.0.165/homeassistant'
   purge_keep_days: 720
 
 # Enables support for tracking state changes over time.
@@ -66,6 +66,7 @@ sun:
 
 zwave:
   usb_path: /dev/ttyACM0
+  network_key: "0xA8,0x30,0xAF,0xC9,0x41,0x3F,0x8F,0xE2,0x37,0x37,0xAB,0xCC,0x5E,0x3A,0x59,0x79"
 
 camera:
   - platform: mjpeg

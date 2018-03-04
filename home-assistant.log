@@ -1,0 +1,415 @@
+2018-03-04 15:50:56 WARNING (Recorder) [homeassistant.components.recorder] Ended unfinished session (id=33 from 2018-03-04 21:32:34)
+2018-03-04 15:51:11 WARNING (SyncWorker_14) [homeassistant.components.emulated_hue] When targeting Google Home, listening port has to be port 80
+2018-03-04 15:56:15 WARNING (SyncWorker_5) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:56:25 WARNING (SyncWorker_13) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:56:35 WARNING (SyncWorker_15) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:56:45 WARNING (SyncWorker_16) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:56:55 WARNING (SyncWorker_8) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:57:05 WARNING (SyncWorker_17) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:57:15 WARNING (SyncWorker_9) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:57:25 WARNING (SyncWorker_18) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:57:35 WARNING (SyncWorker_4) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:57:45 WARNING (SyncWorker_19) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:57:55 WARNING (SyncWorker_2) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:58:05 WARNING (SyncWorker_10) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:58:15 WARNING (SyncWorker_11) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:58:25 WARNING (SyncWorker_5) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:58:35 WARNING (SyncWorker_6) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:58:45 WARNING (SyncWorker_12) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:58:55 WARNING (SyncWorker_1) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:59:05 WARNING (SyncWorker_13) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:59:15 WARNING (SyncWorker_14) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:59:25 WARNING (SyncWorker_7) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:59:35 WARNING (SyncWorker_3) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:59:45 WARNING (SyncWorker_15) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 15:59:55 WARNING (SyncWorker_0) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:00:05 WARNING (SyncWorker_16) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:00:15 WARNING (SyncWorker_8) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:00:25 WARNING (SyncWorker_17) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:00:35 WARNING (SyncWorker_9) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:00:45 WARNING (SyncWorker_18) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:00:55 WARNING (SyncWorker_4) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:01:05 WARNING (SyncWorker_19) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:01:06 WARNING (SyncWorker_2) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:01:15 WARNING (SyncWorker_10) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:01:25 WARNING (SyncWorker_11) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:01:35 WARNING (SyncWorker_5) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:01:45 WARNING (SyncWorker_6) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:01:55 WARNING (SyncWorker_1) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:02:05 WARNING (SyncWorker_13) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:02:15 WARNING (SyncWorker_14) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:02:25 WARNING (SyncWorker_7) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:02:35 WARNING (SyncWorker_3) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:02:45 WARNING (SyncWorker_15) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:02:55 WARNING (SyncWorker_0) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:03:05 WARNING (SyncWorker_16) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:03:15 WARNING (SyncWorker_8) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:03:25 WARNING (SyncWorker_17) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:03:35 WARNING (SyncWorker_9) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:03:45 WARNING (SyncWorker_18) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:03:55 WARNING (SyncWorker_4) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:04:05 WARNING (SyncWorker_19) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:04:15 WARNING (SyncWorker_2) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:04:25 WARNING (SyncWorker_10) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:04:35 WARNING (SyncWorker_11) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:04:45 WARNING (SyncWorker_5) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:04:55 WARNING (SyncWorker_6) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:05:05 WARNING (SyncWorker_1) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:05:15 WARNING (SyncWorker_12) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:05:25 WARNING (SyncWorker_13) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:05:36 WARNING (SyncWorker_14) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+2018-03-04 16:05:46 WARNING (SyncWorker_7) [urllib3.connectionpool] Failed to parse headers (url=http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper): [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 399, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/response.py", line 66, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [StartBoundaryNotFoundDefect(), MultipartInvariantViolationDefect()], unparsed data: ''

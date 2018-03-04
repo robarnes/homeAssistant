@@ -15,19 +15,6 @@
         - +17634387841
         - +17634982723
         - +17634982721
--  id: turnLakePumpOffTimer
-    alias: Turn Lake Pump off Timer
-    initial_state: 'on'
-    hide_entity: True
-    trigger:
-      platform: state
-      entity_id: switch.lake_pump
-      to: 'on'
-    action:
-      - delay:
-          minutes: 90
-      - service: homeassistant.turn_off
-        entity_id: swift.lake_pump
 -  id: turnPorchLampOffTimer
     alias: Turn Porch Lamp off Timer
     initial_state: 'on'
@@ -52,5 +39,3 @@
     action:
       service: homeassistant.turn_on
       entity_id: light.level
-# check out this site for alerts - IE garage door open
-# https://home-assistant.io/components/alert/
