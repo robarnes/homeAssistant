@@ -4745,3 +4745,390 @@
 2018-03-04 17:24:40.618 Detail, 
 2018-03-04 17:24:40.618 Detail, Node003, Removing current message
 2018-03-04 17:24:40.619 Detail, Node003, Notification: ValueChanged
+2018-03-04 17:25:34.186 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x05, 0x45, 0x01, 0x2d, 0x00, 0x00, 0x05, 0x45, 0x9a
+2018-03-04 17:25:34.186 Detail, 
+2018-03-04 17:25:34.186 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-03-04 17:25:34.186 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:34.187 Info, Node002, Received Meter report from node 2: Energy=13.49kWh
+2018-03-04 17:25:34.187 Detail, Node002, Refreshed Value: old value=13.48, new value=13.49, type=decimal
+2018-03-04 17:25:34.187 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:34.187 Info, Node002,     Previous value was 13.49kWh, received 301 seconds ago.
+2018-03-04 17:25:34.187 Detail, Node002, Refreshed Value: old value=13.48, new value=13.49, type=decimal
+2018-03-04 17:25:34.187 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:34.187 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-03-04 17:25:34.187 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:34.187 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:34.201 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:34.215 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:34.229 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:35.111 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x09, 0xad, 0x01, 0x2d, 0x00, 0x00, 0x09, 0xb8, 0x9f
+2018-03-04 17:25:35.111 Detail, 
+2018-03-04 17:25:35.111 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-03-04 17:25:35.111 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:35.111 Info, Node002, Received Meter report from node 2: Power=24.77W
+2018-03-04 17:25:35.111 Detail, Node002, Refreshed Value: old value=24.88, new value=24.77, type=decimal
+2018-03-04 17:25:35.111 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:35.111 Info, Node002,     Previous value was 24.88W, received 301 seconds ago.
+2018-03-04 17:25:35.111 Detail, Node002, Refreshed Value: old value=25.21, new value=24.88, type=decimal
+2018-03-04 17:25:35.112 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:35.112 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-03-04 17:25:35.112 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:35.112 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:35.126 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:35.146 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:35.161 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:36.111 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x30, 0x71, 0x01, 0x2d, 0x30, 0xa8, 0xc5
+2018-03-04 17:25:36.111 Detail, 
+2018-03-04 17:25:36.119 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-03-04 17:25:36.119 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:36.119 Info, Node002, Received Meter report from node 2: Voltage=124.01V
+2018-03-04 17:25:36.119 Detail, Node002, Refreshed Value: old value=124.56, new value=124.01, type=decimal
+2018-03-04 17:25:36.120 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:36.120 Info, Node002,     Previous value was 124.56V, received 301 seconds ago.
+2018-03-04 17:25:36.120 Detail, Node002, Refreshed Value: old value=125.20, new value=124.56, type=decimal
+2018-03-04 17:25:36.120 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:36.120 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-03-04 17:25:36.120 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:36.120 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:36.143 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:36.156 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:36.170 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:37.109 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x1e, 0x01, 0x2d, 0x00, 0x1e, 0x14
+2018-03-04 17:25:37.109 Detail, 
+2018-03-04 17:25:37.109 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-03-04 17:25:37.110 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:37.110 Info, Node002, Received Meter report from node 2: Current=0.30A
+2018-03-04 17:25:37.110 Detail, Node002, Refreshed Value: old value=0.30, new value=0.30, type=decimal
+2018-03-04 17:25:37.110 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:37.110 Info, Node002,     Previous value was 0.30A, received 301 seconds ago.
+2018-03-04 17:25:37.110 Detail, Node002, Refreshed Value: old value=0.30, new value=0.30, type=decimal
+2018-03-04 17:25:37.110 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:37.110 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-03-04 17:25:37.110 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:25:37.111 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:37.124 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:37.139 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:37.153 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:25:40.630 Detail, Node006, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:25:40.630 Detail, Node006, Queuing (Poll) SwitchMultilevelCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x26, 0x02, 0x25, 0xbf, 0x5f
+2018-03-04 17:25:40.630 Error, Node006, ERROR: Dropping command because node is presumed dead
+2018-03-04 17:25:40.630 Detail, Node006, Removing current message
+2018-03-04 17:26:40.641 Detail, Node003, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:26:40.641 Detail, Node003, Queuing (Poll) SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xc0, 0x25
+2018-03-04 17:26:40.641 Detail, 
+2018-03-04 17:26:40.641 Info, Node003, Sending (Poll) message (Callback ID=0xc0, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xc0, 0x25
+2018-03-04 17:26:40.650 Detail, Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-03-04 17:26:40.650 Detail, Node003,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-03-04 17:26:40.670 Detail, Node003,   Received: 0x01, 0x07, 0x00, 0x13, 0xc0, 0x00, 0x00, 0x03, 0x28
+2018-03-04 17:26:40.670 Detail, Node003,   ZW_SEND_DATA Request with callback ID 0xc0 received (expected 0xc0)
+2018-03-04 17:26:40.670 Info, Node003, Request RTT 28 Average Request RTT 28
+2018-03-04 17:26:40.670 Detail,   Expected callbackId was received
+2018-03-04 17:26:40.688 Detail, Node003,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x03, 0x03, 0x26, 0x03, 0x00, 0xd7
+2018-03-04 17:26:40.688 Detail, 
+2018-03-04 17:26:40.688 Info, Node003, Response RTT 46 Average Response RTT 46
+2018-03-04 17:26:40.688 Info, Node003, Received SwitchMultiLevel report: level=0
+2018-03-04 17:26:40.688 Detail, Node003, Refreshed Value: old value=0, new value=0, type=byte
+2018-03-04 17:26:40.688 Detail, Node003, Changes to this value are not verified
+2018-03-04 17:26:40.688 Detail, Node003,   Expected reply and command class was received
+2018-03-04 17:26:40.689 Detail, Node003,   Message transaction complete
+2018-03-04 17:26:40.689 Detail, 
+2018-03-04 17:26:40.689 Detail, Node003, Removing current message
+2018-03-04 17:26:40.689 Detail, Node003, Notification: ValueChanged
+2018-03-04 17:27:40.692 Detail, Node006, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:27:40.692 Detail, Node006, Queuing (Poll) SwitchMultilevelCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x26, 0x02, 0x25, 0xc1, 0x21
+2018-03-04 17:27:40.692 Error, Node006, ERROR: Dropping command because node is presumed dead
+2018-03-04 17:27:40.692 Detail, Node006, Removing current message
+2018-03-04 17:28:40.702 Detail, Node003, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:28:40.703 Detail, Node003, Queuing (Poll) SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xc2, 0x27
+2018-03-04 17:28:40.703 Detail, 
+2018-03-04 17:28:40.703 Info, Node003, Sending (Poll) message (Callback ID=0xc2, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xc2, 0x27
+2018-03-04 17:28:40.712 Detail, Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-03-04 17:28:40.712 Detail, Node003,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-03-04 17:28:40.732 Detail, Node003,   Received: 0x01, 0x07, 0x00, 0x13, 0xc2, 0x00, 0x00, 0x02, 0x2b
+2018-03-04 17:28:40.732 Detail, Node003,   ZW_SEND_DATA Request with callback ID 0xc2 received (expected 0xc2)
+2018-03-04 17:28:40.732 Info, Node003, Request RTT 28 Average Request RTT 28
+2018-03-04 17:28:40.732 Detail,   Expected callbackId was received
+2018-03-04 17:28:40.746 Detail, Node003,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x03, 0x03, 0x26, 0x03, 0x00, 0xd7
+2018-03-04 17:28:40.746 Detail, 
+2018-03-04 17:28:40.746 Info, Node003, Response RTT 42 Average Response RTT 44
+2018-03-04 17:28:40.746 Info, Node003, Received SwitchMultiLevel report: level=0
+2018-03-04 17:28:40.746 Detail, Node003, Refreshed Value: old value=0, new value=0, type=byte
+2018-03-04 17:28:40.746 Detail, Node003, Changes to this value are not verified
+2018-03-04 17:28:40.746 Detail, Node003,   Expected reply and command class was received
+2018-03-04 17:28:40.746 Detail, Node003,   Message transaction complete
+2018-03-04 17:28:40.746 Detail, 
+2018-03-04 17:28:40.747 Detail, Node003, Removing current message
+2018-03-04 17:28:40.747 Detail, Node003, Notification: ValueChanged
+2018-03-04 17:29:40.754 Detail, Node006, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:29:40.754 Detail, Node006, Queuing (Poll) SwitchMultilevelCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x26, 0x02, 0x25, 0xc3, 0x23
+2018-03-04 17:29:40.754 Error, Node006, ERROR: Dropping command because node is presumed dead
+2018-03-04 17:29:40.754 Detail, Node006, Removing current message
+2018-03-04 17:30:34.153 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x05, 0x45, 0x01, 0x2d, 0x00, 0x00, 0x05, 0x45, 0x9a
+2018-03-04 17:30:34.153 Detail, 
+2018-03-04 17:30:34.153 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-03-04 17:30:34.153 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:34.153 Info, Node002, Received Meter report from node 2: Energy=13.49kWh
+2018-03-04 17:30:34.153 Detail, Node002, Refreshed Value: old value=13.49, new value=13.49, type=decimal
+2018-03-04 17:30:34.153 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:34.153 Info, Node002,     Previous value was 13.49kWh, received 301 seconds ago.
+2018-03-04 17:30:34.154 Detail, Node002, Refreshed Value: old value=13.49, new value=13.49, type=decimal
+2018-03-04 17:30:34.154 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:34.154 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-03-04 17:30:34.154 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:34.154 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:34.168 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:34.182 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:34.195 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:35.110 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x09, 0xbc, 0x01, 0x2d, 0x00, 0x00, 0x09, 0xad, 0x9b
+2018-03-04 17:30:35.110 Detail, 
+2018-03-04 17:30:35.110 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-03-04 17:30:35.110 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:35.110 Info, Node002, Received Meter report from node 2: Power=24.92W
+2018-03-04 17:30:35.110 Detail, Node002, Refreshed Value: old value=24.77, new value=24.92, type=decimal
+2018-03-04 17:30:35.110 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:35.110 Info, Node002,     Previous value was 24.77W, received 301 seconds ago.
+2018-03-04 17:30:35.110 Detail, Node002, Refreshed Value: old value=24.88, new value=24.77, type=decimal
+2018-03-04 17:30:35.111 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:35.111 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-03-04 17:30:35.111 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:35.111 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:35.125 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:35.145 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:35.158 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:36.110 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x30, 0xb4, 0x01, 0x2d, 0x30, 0x71, 0xd9
+2018-03-04 17:30:36.110 Detail, 
+2018-03-04 17:30:36.110 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-03-04 17:30:36.110 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:36.110 Info, Node002, Received Meter report from node 2: Voltage=124.68V
+2018-03-04 17:30:36.110 Detail, Node002, Refreshed Value: old value=124.01, new value=124.68, type=decimal
+2018-03-04 17:30:36.111 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:36.111 Info, Node002,     Previous value was 124.01V, received 301 seconds ago.
+2018-03-04 17:30:36.111 Detail, Node002, Refreshed Value: old value=124.56, new value=124.01, type=decimal
+2018-03-04 17:30:36.111 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:36.111 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-03-04 17:30:36.111 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:36.111 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:36.130 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:36.153 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:36.167 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:37.108 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x1e, 0x01, 0x2d, 0x00, 0x1e, 0x14
+2018-03-04 17:30:37.108 Detail, 
+2018-03-04 17:30:37.108 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-03-04 17:30:37.108 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:37.108 Info, Node002, Received Meter report from node 2: Current=0.30A
+2018-03-04 17:30:37.108 Detail, Node002, Refreshed Value: old value=0.30, new value=0.30, type=decimal
+2018-03-04 17:30:37.108 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:37.109 Info, Node002,     Previous value was 0.30A, received 301 seconds ago.
+2018-03-04 17:30:37.109 Detail, Node002, Refreshed Value: old value=0.30, new value=0.30, type=decimal
+2018-03-04 17:30:37.109 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:37.109 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-03-04 17:30:37.109 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:30:37.109 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:37.123 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:37.137 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:37.151 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:30:40.764 Detail, Node003, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:30:40.764 Detail, Node003, Queuing (Poll) SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xc4, 0x21
+2018-03-04 17:30:40.765 Detail, 
+2018-03-04 17:30:40.765 Info, Node003, Sending (Poll) message (Callback ID=0xc4, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xc4, 0x21
+2018-03-04 17:30:40.773 Detail, Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-03-04 17:30:40.774 Detail, Node003,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-03-04 17:30:40.794 Detail, Node003,   Received: 0x01, 0x07, 0x00, 0x13, 0xc4, 0x00, 0x00, 0x03, 0x2c
+2018-03-04 17:30:40.794 Detail, Node003,   ZW_SEND_DATA Request with callback ID 0xc4 received (expected 0xc4)
+2018-03-04 17:30:40.794 Info, Node003, Request RTT 28 Average Request RTT 28
+2018-03-04 17:30:40.794 Detail,   Expected callbackId was received
+2018-03-04 17:30:40.807 Detail, Node003,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x03, 0x03, 0x26, 0x03, 0x00, 0xd7
+2018-03-04 17:30:40.807 Detail, 
+2018-03-04 17:30:40.807 Info, Node003, Response RTT 41 Average Response RTT 42
+2018-03-04 17:30:40.807 Info, Node003, Received SwitchMultiLevel report: level=0
+2018-03-04 17:30:40.807 Detail, Node003, Refreshed Value: old value=0, new value=0, type=byte
+2018-03-04 17:30:40.807 Detail, Node003, Changes to this value are not verified
+2018-03-04 17:30:40.807 Detail, Node003,   Expected reply and command class was received
+2018-03-04 17:30:40.807 Detail, Node003,   Message transaction complete
+2018-03-04 17:30:40.807 Detail, 
+2018-03-04 17:30:40.807 Detail, Node003, Removing current message
+2018-03-04 17:30:40.807 Detail, Node003, Notification: ValueChanged
+2018-03-04 17:31:40.815 Detail, Node006, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:31:40.815 Detail, Node006, Queuing (Poll) SwitchMultilevelCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x26, 0x02, 0x25, 0xc5, 0x25
+2018-03-04 17:31:40.816 Error, Node006, ERROR: Dropping command because node is presumed dead
+2018-03-04 17:31:40.816 Detail, Node006, Removing current message
+2018-03-04 17:32:40.826 Detail, Node003, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:32:40.826 Detail, Node003, Queuing (Poll) SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xc6, 0x23
+2018-03-04 17:32:40.826 Detail, 
+2018-03-04 17:32:40.826 Info, Node003, Sending (Poll) message (Callback ID=0xc6, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xc6, 0x23
+2018-03-04 17:32:40.834 Detail, Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-03-04 17:32:40.834 Detail, Node003,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-03-04 17:32:40.855 Detail, Node003,   Received: 0x01, 0x07, 0x00, 0x13, 0xc6, 0x00, 0x00, 0x03, 0x2e
+2018-03-04 17:32:40.855 Detail, Node003,   ZW_SEND_DATA Request with callback ID 0xc6 received (expected 0xc6)
+2018-03-04 17:32:40.855 Info, Node003, Request RTT 28 Average Request RTT 28
+2018-03-04 17:32:40.855 Detail,   Expected callbackId was received
+2018-03-04 17:32:40.869 Detail, Node003,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x03, 0x03, 0x26, 0x03, 0x00, 0xd7
+2018-03-04 17:32:40.869 Detail, 
+2018-03-04 17:32:40.869 Info, Node003, Response RTT 42 Average Response RTT 42
+2018-03-04 17:32:40.869 Info, Node003, Received SwitchMultiLevel report: level=0
+2018-03-04 17:32:40.869 Detail, Node003, Refreshed Value: old value=0, new value=0, type=byte
+2018-03-04 17:32:40.869 Detail, Node003, Changes to this value are not verified
+2018-03-04 17:32:40.869 Detail, Node003,   Expected reply and command class was received
+2018-03-04 17:32:40.869 Detail, Node003,   Message transaction complete
+2018-03-04 17:32:40.869 Detail, 
+2018-03-04 17:32:40.869 Detail, Node003, Removing current message
+2018-03-04 17:32:40.869 Detail, Node003, Notification: ValueChanged
+2018-03-04 17:33:40.877 Detail, Node006, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:33:40.877 Detail, Node006, Queuing (Poll) SwitchMultilevelCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x26, 0x02, 0x25, 0xc7, 0x27
+2018-03-04 17:33:40.877 Error, Node006, ERROR: Dropping command because node is presumed dead
+2018-03-04 17:33:40.877 Detail, Node006, Removing current message
+2018-03-04 17:34:40.887 Detail, Node003, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:34:40.888 Detail, Node003, Queuing (Poll) SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xc8, 0x2d
+2018-03-04 17:34:40.888 Detail, 
+2018-03-04 17:34:40.888 Info, Node003, Sending (Poll) message (Callback ID=0xc8, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xc8, 0x2d
+2018-03-04 17:34:40.896 Detail, Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-03-04 17:34:40.896 Detail, Node003,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-03-04 17:34:40.916 Detail, Node003,   Received: 0x01, 0x07, 0x00, 0x13, 0xc8, 0x00, 0x00, 0x03, 0x20
+2018-03-04 17:34:40.917 Detail, Node003,   ZW_SEND_DATA Request with callback ID 0xc8 received (expected 0xc8)
+2018-03-04 17:34:40.917 Info, Node003, Request RTT 28 Average Request RTT 28
+2018-03-04 17:34:40.917 Detail,   Expected callbackId was received
+2018-03-04 17:34:40.930 Detail, Node003,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x03, 0x03, 0x26, 0x03, 0x00, 0xd7
+2018-03-04 17:34:40.931 Detail, 
+2018-03-04 17:34:40.931 Info, Node003, Response RTT 42 Average Response RTT 42
+2018-03-04 17:34:40.931 Info, Node003, Received SwitchMultiLevel report: level=0
+2018-03-04 17:34:40.931 Detail, Node003, Refreshed Value: old value=0, new value=0, type=byte
+2018-03-04 17:34:40.931 Detail, Node003, Changes to this value are not verified
+2018-03-04 17:34:40.931 Detail, Node003,   Expected reply and command class was received
+2018-03-04 17:34:40.931 Detail, Node003,   Message transaction complete
+2018-03-04 17:34:40.931 Detail, 
+2018-03-04 17:34:40.931 Detail, Node003, Removing current message
+2018-03-04 17:34:40.931 Detail, Node003, Notification: ValueChanged
+2018-03-04 17:35:35.120 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x05, 0x45, 0x01, 0x2d, 0x00, 0x00, 0x05, 0x45, 0x9a
+2018-03-04 17:35:35.120 Detail, 
+2018-03-04 17:35:35.120 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-03-04 17:35:35.120 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:35.120 Info, Node002, Received Meter report from node 2: Energy=13.49kWh
+2018-03-04 17:35:35.120 Detail, Node002, Refreshed Value: old value=13.49, new value=13.49, type=decimal
+2018-03-04 17:35:35.120 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:35.120 Info, Node002,     Previous value was 13.49kWh, received 301 seconds ago.
+2018-03-04 17:35:35.120 Detail, Node002, Refreshed Value: old value=13.49, new value=13.49, type=decimal
+2018-03-04 17:35:35.120 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:35.121 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-03-04 17:35:35.121 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:35.121 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:35.134 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:35.148 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:35.161 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:35.176 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x44, 0x00, 0x00, 0x05, 0x45, 0x01, 0x2d, 0x00, 0x00, 0x05, 0x45, 0x9a
+2018-03-04 17:35:35.177 Detail, 
+2018-03-04 17:35:35.177 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-03-04 17:35:35.177 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:35.177 Info, Node002, Received Meter report from node 2: Energy=13.49kWh
+2018-03-04 17:35:35.177 Detail, Node002, Refreshed Value: old value=13.49, new value=13.49, type=decimal
+2018-03-04 17:35:35.177 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:35.177 Info, Node002,     Previous value was 13.49kWh, received 301 seconds ago.
+2018-03-04 17:35:35.177 Detail, Node002, Refreshed Value: old value=13.49, new value=13.49, type=decimal
+2018-03-04 17:35:35.177 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:35.177 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-03-04 17:35:35.177 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:35.178 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:35.191 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:35.203 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:35.216 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:35.876 Detail, Node002,   Received: 0x01, 0x14, 0x00, 0x04, 0x00, 0x02, 0x0e, 0x32, 0x02, 0x21, 0x54, 0x00, 0x00, 0x09, 0xc1, 0x01, 0x2d, 0x00, 0x00, 0x09, 0xbc, 0xf7
+2018-03-04 17:35:35.876 Detail, 
+2018-03-04 17:35:35.876 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-03-04 17:35:35.876 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:35.876 Info, Node002, Received Meter report from node 2: Power=24.97W
+2018-03-04 17:35:35.876 Detail, Node002, Refreshed Value: old value=24.92, new value=24.97, type=decimal
+2018-03-04 17:35:35.876 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:35.877 Info, Node002,     Previous value was 24.92W, received 301 seconds ago.
+2018-03-04 17:35:35.877 Detail, Node002, Refreshed Value: old value=24.77, new value=24.92, type=decimal
+2018-03-04 17:35:35.877 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:35.877 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-03-04 17:35:35.877 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:35.877 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:35.891 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:35.911 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:35.925 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:36.876 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x42, 0x30, 0xc4, 0x01, 0x2d, 0x30, 0xb4, 0x6c
+2018-03-04 17:35:36.877 Detail, 
+2018-03-04 17:35:36.877 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-03-04 17:35:36.877 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:36.877 Info, Node002, Received Meter report from node 2: Voltage=124.84V
+2018-03-04 17:35:36.877 Detail, Node002, Refreshed Value: old value=124.68, new value=124.84, type=decimal
+2018-03-04 17:35:36.877 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:36.877 Info, Node002,     Previous value was 124.68V, received 301 seconds ago.
+2018-03-04 17:35:36.877 Detail, Node002, Refreshed Value: old value=124.01, new value=124.68, type=decimal
+2018-03-04 17:35:36.877 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:36.877 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-03-04 17:35:36.877 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:36.878 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:36.891 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:36.905 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:36.919 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:37.875 Detail, Node002,   Received: 0x01, 0x10, 0x00, 0x04, 0x00, 0x02, 0x0a, 0x32, 0x02, 0xa1, 0x4a, 0x00, 0x1e, 0x01, 0x2d, 0x00, 0x1e, 0x14
+2018-03-04 17:35:37.875 Detail, 
+2018-03-04 17:35:37.875 Detail, Node002, Refreshed Value: old value=false, new value=false, type=bool
+2018-03-04 17:35:37.875 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:37.875 Info, Node002, Received Meter report from node 2: Current=0.30A
+2018-03-04 17:35:37.875 Detail, Node002, Refreshed Value: old value=0.30, new value=0.30, type=decimal
+2018-03-04 17:35:37.875 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:37.875 Info, Node002,     Previous value was 0.30A, received 301 seconds ago.
+2018-03-04 17:35:37.875 Detail, Node002, Refreshed Value: old value=0.30, new value=0.30, type=decimal
+2018-03-04 17:35:37.875 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:37.876 Detail, Node002, Refreshed Value: old value=301, new value=301, type=int
+2018-03-04 17:35:37.876 Detail, Node002, Changes to this value are not verified
+2018-03-04 17:35:37.876 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:37.889 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:37.903 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:37.916 Detail, Node002, Notification: ValueChanged
+2018-03-04 17:35:40.939 Detail, Node006, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:35:40.939 Detail, Node006, Queuing (Poll) SwitchMultilevelCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x26, 0x02, 0x25, 0xc9, 0x29
+2018-03-04 17:35:40.939 Error, Node006, ERROR: Dropping command because node is presumed dead
+2018-03-04 17:35:40.939 Detail, Node006, Removing current message
+2018-03-04 17:36:40.949 Detail, Node003, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:36:40.949 Detail, Node003, Queuing (Poll) SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xca, 0x2f
+2018-03-04 17:36:40.950 Detail, 
+2018-03-04 17:36:40.950 Info, Node003, Sending (Poll) message (Callback ID=0xca, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xca, 0x2f
+2018-03-04 17:36:40.958 Detail, Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-03-04 17:36:40.958 Detail, Node003,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-03-04 17:36:40.978 Detail, Node003,   Received: 0x01, 0x07, 0x00, 0x13, 0xca, 0x00, 0x00, 0x02, 0x23
+2018-03-04 17:36:40.978 Detail, Node003,   ZW_SEND_DATA Request with callback ID 0xca received (expected 0xca)
+2018-03-04 17:36:40.978 Info, Node003, Request RTT 28 Average Request RTT 28
+2018-03-04 17:36:40.978 Detail,   Expected callbackId was received
+2018-03-04 17:36:40.992 Detail, Node003,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x03, 0x03, 0x26, 0x03, 0x00, 0xd7
+2018-03-04 17:36:40.992 Detail, 
+2018-03-04 17:36:40.992 Info, Node003, Response RTT 42 Average Response RTT 42
+2018-03-04 17:36:40.992 Info, Node003, Received SwitchMultiLevel report: level=0
+2018-03-04 17:36:40.993 Detail, Node003, Refreshed Value: old value=0, new value=0, type=byte
+2018-03-04 17:36:40.993 Detail, Node003, Changes to this value are not verified
+2018-03-04 17:36:40.993 Detail, Node003,   Expected reply and command class was received
+2018-03-04 17:36:40.993 Detail, Node003,   Message transaction complete
+2018-03-04 17:36:40.993 Detail, 
+2018-03-04 17:36:40.993 Detail, Node003, Removing current message
+2018-03-04 17:36:40.993 Detail, Node003, Notification: ValueChanged
+2018-03-04 17:37:41.000 Detail, Node006, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:37:41.000 Detail, Node006, Queuing (Poll) SwitchMultilevelCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x26, 0x02, 0x25, 0xcb, 0x2b
+2018-03-04 17:37:41.001 Error, Node006, ERROR: Dropping command because node is presumed dead
+2018-03-04 17:37:41.001 Detail, Node006, Removing current message
+2018-03-04 17:38:41.011 Detail, Node003, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:38:41.011 Detail, Node003, Queuing (Poll) SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xcc, 0x29
+2018-03-04 17:38:41.011 Detail, 
+2018-03-04 17:38:41.011 Info, Node003, Sending (Poll) message (Callback ID=0xcc, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x26, 0x02, 0x25, 0xcc, 0x29
+2018-03-04 17:38:41.020 Detail, Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-03-04 17:38:41.020 Detail, Node003,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-03-04 17:38:41.040 Detail, Node003,   Received: 0x01, 0x07, 0x00, 0x13, 0xcc, 0x00, 0x00, 0x03, 0x24
+2018-03-04 17:38:41.040 Detail, Node003,   ZW_SEND_DATA Request with callback ID 0xcc received (expected 0xcc)
+2018-03-04 17:38:41.040 Info, Node003, Request RTT 28 Average Request RTT 28
+2018-03-04 17:38:41.040 Detail,   Expected callbackId was received
+2018-03-04 17:38:41.054 Detail, Node003,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x03, 0x03, 0x26, 0x03, 0x00, 0xd7
+2018-03-04 17:38:41.054 Detail, 
+2018-03-04 17:38:41.054 Info, Node003, Response RTT 42 Average Response RTT 42
+2018-03-04 17:38:41.054 Info, Node003, Received SwitchMultiLevel report: level=0
+2018-03-04 17:38:41.054 Detail, Node003, Refreshed Value: old value=0, new value=0, type=byte
+2018-03-04 17:38:41.054 Detail, Node003, Changes to this value are not verified
+2018-03-04 17:38:41.054 Detail, Node003,   Expected reply and command class was received
+2018-03-04 17:38:41.054 Detail, Node003,   Message transaction complete
+2018-03-04 17:38:41.054 Detail, 
+2018-03-04 17:38:41.054 Detail, Node003, Removing current message
+2018-03-04 17:38:41.055 Detail, Node003, Notification: ValueChanged
+2018-03-04 17:39:41.062 Detail, Node006, Polling: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (poll queue has 0 messages)
+2018-03-04 17:39:41.062 Detail, Node006, Queuing (Poll) SwitchMultilevelCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x26, 0x02, 0x25, 0xcd, 0x2d
+2018-03-04 17:39:41.062 Error, Node006, ERROR: Dropping command because node is presumed dead
+2018-03-04 17:39:41.062 Detail, Node006, Removing current message
