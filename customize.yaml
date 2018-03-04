@@ -22,6 +22,15 @@ sensor.zooz_zse40_4in1_sensor_relative_humidity_4_5:
 switch.switch:
   friendly_name:  Backyard Floods
   icon: mdi:lightbulb
+switch.switch_3:
+  friendly_name:  Kitchen Recessed
+  icon: mdi:lightbulb
+switch.switch_4:
+  friendly_name:  Kitchen Stove
+  icon: mdi:lightbulb
+switch.switch_5:
+  friendly_name:  Kitchen Chandalier
+  icon: mdi:lightbulb
 light.level_2:
   friendly_name:  Lake Light
   icon: mdi:lightbulb

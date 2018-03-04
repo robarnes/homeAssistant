@@ -3,7 +3,9 @@ default_view:
   view: yes
   icon: mdi:home
   entities:
+    -  group.kitchen
     -  group.upstairs
+    -  group.kitchen
     -  group.downstairs
     -  group.outside
     -  group.cameras
@@ -18,6 +20,15 @@ misc:
   entities:
     -  group.zwaveDevices
 # Groups to put on tabs
+kitchen:
+  name: Kitchen 
+  entities:
+    -  switch.switch_3
+#		Kitchen Recessed
+    -  switch.switch_4
+#		Kitchen Over Oven
+    -  switch.switch_5
+#		Kitchen Chandalier
 upstairs:
   name: Upstairs
   entities:
