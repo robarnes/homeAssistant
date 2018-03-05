@@ -12,9 +12,6 @@ homeassistant:
   time_zone: America/Chicago
   temperature_unit: F
   customize: !include customize.yaml
-  whitelist_external_dirs:
-    - '/tmp'
-#	 Allow for camera snaps to be stored
 
 zone:
   name: Home
@@ -67,12 +64,12 @@ zwave:
   usb_path: /dev/ttyACM0
   network_key: "0xA8,0x30,0xAF,0xC9,0x41,0x3F,0x8F,0xE2,0x37,0x37,0xAB,0xCC,0x5E,0x3A,0x59,0x79"
 
-camera:
-  - platform: mjpeg
-    mjpeg_url: http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper
-    name: Front Door
-    #username: admin
-    #password: !secret camera_password 
+#camera:
+#  - platform: mjpeg
+#    mjpeg_url: http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper
+#    name: Front Door
+#    #username: admin
+#    #password: !secret camera_password 
 
 twilio:
   account_sid: !secret twilio_account_sid

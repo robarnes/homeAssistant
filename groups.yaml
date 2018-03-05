@@ -8,7 +8,7 @@ default_view:
     -  group.kitchen
     -  group.downstairs
     -  group.outside
-    -  group.cameras
+#    -  group.cameras
     # Add some badges
     -  binary_sensor.garage_door_one
     -  binary_sensor.garage_door_two
@@ -56,7 +56,7 @@ zwaveDevices:
     -  zwave.zooz_zen07_mini_plug
     -  zwave.ge_14292_inwall_smart_toggle_switch
     -  zwave.ge_zw7101_smart_led_light_bulb_ze26i
-cameras:
-  name: cameras
-  entities:
-    - camera.front_door   
+#cameras:
+#  name: cameras
+#  entities:
+#    - camera.front_door   
