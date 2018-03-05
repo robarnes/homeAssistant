@@ -12,7 +12,6 @@ homeassistant:
   time_zone: America/Chicago
   temperature_unit: F
   customize: !include customize.yaml
-  # automation: !include automations.yaml
   whitelist_external_dirs:
     - '/tmp'
 #	 Allow for camera snaps to be stored
@@ -150,3 +149,59 @@ light:
     optimistic: false
 
 group: !include groups.yaml
+
+automation:
+  - id: textOnDoorbellPress
+    alias: Text on doorbell press
+    initial_state: 'on'
+    hide_entity: True
+    trigger:
+      - platform: mqtt
+        topic: "/esp/doorbell/state"
+        payload: 'ON'
+    action:
+      service: notify.twilio
+      data:
+        message: 'Doorbell : http://bit.ly/2oLoY8p'
+        target:
+          - +16512692736
+          - +17634387841
+          - +17634982723
+          - +17634982721
+  -  id: turnLakePumpOffTimer
+     alias: Turn Lake Pump off Timer
+     initial_state: 'on'
+     hide_entity: True
+     trigger:
+       platform: state
+       entity_id: switch.lake_pump
+       to: 'on'
+     action:
+       - delay:
+           minutes: 90
+       - service: homeassistant.turn_off
+         entity_id: swift.lake_pump
+  -  id: turnPorchLampOffTimer
+     alias: Turn Porch Lamp off Timer
+     initial_state: 'on'
+     hide_entity: True
+     trigger:
+       platform: state
+       entity_id: light.level 
+       to: 'on'
+     action:
+       - delay:
+           minutes: 240
+       - service: homeassistant.turn_off
+         entity_id: light.level
+  -  id: turnPorchLampOnAtSunset
+     alias : Turn Porch Lamp on at Sunset
+     initial_state: 'on'
+     hide_entity: True
+     trigger:
+       platform: sun
+       event: sunset
+       offset: "-00:10:00"
+     action:
+       service: homeassistant.turn_on
+       entity_id: light.level
