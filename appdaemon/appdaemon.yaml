@@ -1,0 +1,14 @@
+AppDaemon:
+  logfile: STDOUT
+  errorfile: STDERR
+  threads: 10
+  app_dir: /config/appdaemon/apps
+HASS:
+  ha_url: http://hassio/homeassistant
+  ha_key: fa29e697ad6d4ee9851aebb845f181af
+HADashboard:
+  dash_url: http://127.0.0.1:5050
+  dash_dir: /config/appdaemon/dashboards
+hello_world:
+  module: hello
+  class: HelloWorld
