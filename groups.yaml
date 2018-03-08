@@ -5,7 +5,6 @@ default_view:
   entities:
     -  group.kitchen
     -  group.upstairs
-    -  group.kitchen
     -  group.downstairs
     -  group.outside
 #    -  group.cameras

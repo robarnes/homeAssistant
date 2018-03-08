@@ -117,6 +117,23 @@ switch:
     payload_off: "0"
     optimisitic: False
 
+sensor:
+  - platform: darksky
+    api_key: !secret darksky_api
+    monitored_conditions:
+      - summary
+      - icon
+      - nearest_storm_distance
+      - temperature
+      - humidity
+      - precip_probability
+      - precip_intensity
+      - wind_speed
+      - pressure
+      - wind_bearing
+      - apparent_temperature
+      - icon
+
 binary_sensor:
   - platform: mqtt
     state_topic: "/esp/garageDoorOne/state"
