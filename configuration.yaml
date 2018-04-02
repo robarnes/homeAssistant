@@ -28,6 +28,7 @@ config:
 
 # Enables the frontend
 frontend:
+  javascript_version:es5
 
 emulated_hue:
   # listen_port: 8300
