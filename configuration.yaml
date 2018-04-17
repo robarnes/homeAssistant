@@ -57,6 +57,11 @@ history:
 # View all events in a logbook
 logbook:
 
+logger:
+  default: error
+  logs:
+    homeassistant.components.cameras: fatal
+
 # Track the sun
 sun:
 
@@ -64,12 +69,12 @@ zwave:
   usb_path: /dev/ttyACM0
   network_key: "0xA8,0x30,0xAF,0xC9,0x41,0x3F,0x8F,0xE2,0x37,0x37,0xAB,0xCC,0x5E,0x3A,0x59,0x79"
 
-#camera:
-#  - platform: mjpeg
-#    mjpeg_url: http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper
-#    name: Front Door
-#    #username: admin
-#    #password: !secret camera_password 
+camera:
+  - platform: mjpeg
+    mjpeg_url: http://192.168.0.163:81/videostream.cgi?user=admin&pwd=minicooper
+    name: Front Door
+    #username: admin
+    #password: !secret camera_password 
 
 twilio:
   account_sid: !secret twilio_account_sid
@@ -176,7 +181,7 @@ automation:
     action:
       service: notify.twilio
       data:
-        message: 'Doorbell : http://bit.ly/2oLoY8p'
+        message: 'Doorbell, dont tell coopie!'
         target:
           - +16512692736
           - +17634387841
