@@ -22,6 +22,9 @@ sensor.zooz_zse40_4in1_sensor_relative_humidity_4_5:
 switch.switch:
   friendly_name:  Backyard Floods
   icon: mdi:lightbulb
+switch.switch_2:
+  friendly_name:  Lake Pump
+  icon: mdi:water-pump 
 switch.switch_3:
   friendly_name:  Kitchen Recessed
   icon: mdi:lightbulb
@@ -36,3 +39,10 @@ light.level_2:
   icon: mdi:lightbulb
   refresh_value: true
   delay: 5
+sensor.iframe:
+  custom_ui_state_card: state-card-iframe
+  config:
+    height: 245
+    width: 300
+    scale: 1 
+    url: http://forecast.io/embed/#lat=45.178805&lon=-93.732485&name=STMA

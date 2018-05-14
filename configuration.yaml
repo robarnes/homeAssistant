@@ -28,6 +28,8 @@ config:
 
 # Enables the frontend
 frontend:
+  extra_html_url:
+    - /local/custom_ui/state-card-iframe.html
 
 emulated_hue:
   # listen_port: 8300
@@ -114,13 +116,6 @@ switch:
     payload_on: "1"
     payload_off: "0"
     optimisitic: False
-  - platform: mqtt
-    name: "Lake Pump"
-    state_topic: "/esp/lakePump/state"
-    command_topic: "/esp/lakePump/set"
-    payload_on: "1"
-    payload_off: "0"
-    optimisitic: False
 
 sensor:
   - platform: darksky
@@ -138,6 +133,10 @@ sensor:
       - wind_bearing
       - apparent_temperature
       - icon
+  - platform: template
+    sensors:
+      iframe:
+        value_template: iframe
 
 binary_sensor:
   - platform: mqtt

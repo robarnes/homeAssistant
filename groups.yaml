@@ -3,6 +3,7 @@ default_view:
   view: yes
   icon: mdi:home
   entities:
+    -  group.iFrame_weather
     -  group.kitchen
     -  group.upstairs
     -  group.downstairs
@@ -48,6 +49,8 @@ outside:
 #		Lake Lamp
     -  switch.switch
 #		Backyard Floods
+    -  switch.switch_2
+#               Lake Pump
 zwaveDevices:
   name: zwave Devices
   entities:
@@ -59,3 +62,7 @@ cameras:
   name: cameras
   entities:
     - camera.front_door   
+iFrame_weather:
+  name: ' '
+  entities:
+    - sensor.iframe
