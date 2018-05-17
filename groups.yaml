@@ -3,12 +3,13 @@ default_view:
   view: yes
   icon: mdi:home
   entities:
-    -  group.iFrame_weather
+#    -  group.iFrame_weather
     -  group.kitchen
     -  group.upstairs
     -  group.downstairs
     -  group.outside
     -  group.cameras
+    -  group.darksky
     # Add some badges
     -  binary_sensor.garage_door_one
     -  binary_sensor.garage_door_two
@@ -66,3 +67,10 @@ iFrame_weather:
   name: ' '
   entities:
     - sensor.iframe
+darksky:
+  name: Weather
+  entities:
+    -  sensor.dark_sky_summary
+    -  sensor.dark_sky_temperature
+    -  sensor.dark_sky_temperature_max
+    -  sensor.dark_sky_daily_summary

@@ -122,8 +122,9 @@ sensor:
     api_key: !secret darksky_api
     monitored_conditions:
       - summary
+      - daily_summary
+      - temperature_max
       - icon
-      - nearest_storm_distance
       - temperature
       - humidity
       - precip_probability
