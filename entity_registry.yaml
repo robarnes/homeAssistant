@@ -102,3 +102,7 @@ media_player.living_room_display:
   name:
   platform: cast
   unique_id: 9472744c-67b0-558a-1dbe-67d4e48ce737
+media_player.workout_tv:
+  name:
+  platform: cast
+  unique_id: 096afc13-a2aa-9adc-3744-d86838f22a11

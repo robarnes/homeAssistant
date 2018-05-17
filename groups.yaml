@@ -72,5 +72,5 @@ darksky:
   entities:
     -  sensor.dark_sky_summary
     -  sensor.dark_sky_temperature
-    -  sensor.dark_sky_temperature_max
+    -  sensor.dark_sky_daily_high_temperature
     -  sensor.dark_sky_daily_summary

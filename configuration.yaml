@@ -38,7 +38,7 @@ emulated_hue:
 
 http:
   # Uncomment this to add a password (recommended!)
-  # api_password: PASSWORD
+  # api_password: !secret api_pass
 
 # Checks for available updates
 updater:
@@ -123,7 +123,6 @@ sensor:
     monitored_conditions:
       - summary
       - daily_summary
-      - temperature_max
       - icon
       - temperature
       - humidity
@@ -169,7 +168,9 @@ light:
 
 group: !include groups.yaml
 
-automation:
+automation: !include automations.yaml
+
+automation old:
   - id: textOnDoorbellPress
     alias: Text on doorbell press
     initial_state: 'on'
@@ -187,19 +188,6 @@ automation:
           - +17634387841
           - +17634982723
           - +17634982721
-  -  id: turnLakePumpOffTimer
-     alias: Turn Lake Pump off Timer
-     initial_state: 'on'
-     hide_entity: True
-     trigger:
-       platform: state
-       entity_id: switch.lake_pump
-       to: 'on'
-     action:
-       - delay:
-           minutes: 90
-       - service: homeassistant.turn_off
-         entity_id: swift.lake_pump
   -  id: turnPorchLampOffTimer
      alias: Turn Porch Lamp off Timer
      initial_state: 'on'
