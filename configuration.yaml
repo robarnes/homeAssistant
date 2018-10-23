@@ -12,6 +12,8 @@ homeassistant:
   time_zone: America/Chicago
   temperature_unit: F
   customize: !include customize.yaml
+  auth_providers:
+   - type: trusted_networks
 
 zone:
   name: Home
@@ -39,6 +41,9 @@ emulated_hue:
 http:
   # Uncomment this to add a password (recommended!)
   api_password: !secret api_pass
+  trusted_networks:
+    - 127.0.0.1
+    - 192.168.0.0/24
 
 # Checks for available updates
 updater:
