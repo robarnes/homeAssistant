@@ -38,7 +38,7 @@ emulated_hue:
 
 http:
   # Uncomment this to add a password (recommended!)
-  # api_password: !secret api_pass
+  api_password: !secret api_pass
 
 # Checks for available updates
 updater:
@@ -50,7 +50,7 @@ discovery:
 conversation:
 
 recorder:
-  db_url: 'mysql://hass:killians1@192.168.0.165/homeassistant'
+  db_url: 'mysql://hass:killians1@192.168.0.165/hass_db'
   purge_keep_days: 720
 
 # Enables support for tracking state changes over time.
