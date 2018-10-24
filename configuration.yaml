@@ -93,7 +93,7 @@ notify:
     from_number: +19133254454
 
 mqtt:
-  broker: 127.0.0.1
+  broker: ha.widgetninja.net
   port: 1883
   client_id: home-assistant-1
   username: mosquitto 
