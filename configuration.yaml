@@ -38,6 +38,11 @@ emulated_hue:
   expose_by_default: false
   host_ip: 192.168.0.150
 
+wemo:
+  discovery: false
+  static:
+    - 192.168.0.180
+
 http:
   # Uncomment this to add a password (recommended!)
   api_password: !secret api_pass
