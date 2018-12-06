@@ -37,7 +37,7 @@ switch.switch_5:
 switch.wemo1:
 #		Wemo1 miniswitch
   friendly_name:  XmasLights
-  icon: mdi:power-socket-us
+  icon: mdi:pine-tree
 switch.wemo2:
 #		Wemo2 miniswitch
   friendly_name:  OfficeHeater
