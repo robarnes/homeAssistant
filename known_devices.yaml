@@ -1,0 +1,16 @@
+
+rob:
+  hide_if_away: false
+  icon:
+  mac:
+  name: rob
+  picture:
+  track: true
+
+aidan:
+  hide_if_away: false
+  icon:
+  mac:
+  name: aidan
+  picture:
+  track: true
