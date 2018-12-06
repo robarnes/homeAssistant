@@ -39,9 +39,10 @@ emulated_hue:
   host_ip: 192.168.0.150
 
 wemo:
-  discovery: false
   static:
     - 192.168.0.180
+    - 192.168.0.181
+    - 192.168.0.182
 
 http:
   # Uncomment this to add a password (recommended!)

@@ -34,6 +34,17 @@ switch.switch_4:
 switch.switch_5:
   friendly_name:  Kitchen Chandalier
   icon: mdi:lightbulb
+switch.wemo1:
+#		Wemo1 miniswitch
+  friendly_name:  XmasLights
+  icon: mdi:power-socket-us
+switch.wemo2:
+#		Wemo2 miniswitch
+  friendly_name:  OfficeHeater
+  icon: mdi:radiator
+switch.wemo3:
+#		Wemo3 miniswitch
+  icon: mdi:power-socket-us
 light.level_2:
   friendly_name:  Lake Light
   icon: mdi:lightbulb

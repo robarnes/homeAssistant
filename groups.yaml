@@ -38,9 +38,15 @@ upstairs:
   entities:
     -  switch.zooz_zen07_mini_plug_switch
 #		Aidan LED Wall
+    -  switch.wemo1
+#		Wemo1 (miniswitch) for xmas lights
+    -  switch.wemo3
+#		Wemo3 (miniswitch) for unkown use
 downstairs:
   name: Downstairs
   entities:
+    -  switch.wemo2
+#		Wemo2 (miniswitch) for amy heater
 outside:
   name: Outside
   control: hidden
