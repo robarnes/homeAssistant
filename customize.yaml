@@ -44,7 +44,8 @@ switch.wemo2:
   icon: mdi:radiator
 switch.wemo3:
 #		Wemo3 miniswitch
-  icon: mdi:power-socket-us
+  friendly_name:  BackupWiFi
+  icon: mdi:wifi
 light.level_2:
   friendly_name:  Lake Light
   icon: mdi:lightbulb
