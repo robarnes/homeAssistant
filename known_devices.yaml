@@ -14,3 +14,11 @@ aidan:
   name: aidan
   picture:
   track: true
+
+amb_iphone:
+  hide_if_away: false
+  icon:
+  mac:
+  name: amb iphone
+  picture:
+  track: true

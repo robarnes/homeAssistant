@@ -1,1 +1,1166 @@
-[{"id":"a4e38abf.e8aa58","type":"tab","label":"Flow 1","disabled":false,"info":""},{"id":"86a4d54.bf68528","type":"tab","label":"Flow 1","disabled":false,"info":""},{"id":"98a9214a.62958","type":"tab","label":"Flow 2","disabled":false,"info":""},{"id":"9dff7b9e.63d978","type":"server","z":"","name":"Home Assistant","url":"http://hassio/homeassistant","pass":"7ec087263ae2d1f4c1972a983173ba98b43347cce4fbc0b19154477aa1a7b18e"},{"id":"437908d0.d1c828","type":"server","z":"","name":"Home Assistant","url":"http://localhost:8123","pass":"killians1"},{"id":"3d137f10.3bc04","type":"server","z":"","name":"Home Assistant","url":"http://localhost:8123","pass":"XXXXXX"},{"id":"a494f0a7.6f383","type":"mqtt-broker","z":"","name":"ha MQTT","broker":"ha.widgetninja.net","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"birthTopic":"","birthQos":"0","birthPayload":"","closeTopic":"","closeQos":"0","closePayload":"","willTopic":"","willQos":"0","willPayload":""},{"id":"e3d8b6b2.ffd858","type":"mqtt-broker","z":"","name":"thingsBoardBeeBeeLakeTemp","broker":"thingsboard.northcentralus.cloudapp.azure.com","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"birthTopic":"","birthQos":"0","birthPayload":"","closeTopic":"","closeQos":"0","closePayload":"","willTopic":"","willQos":"0","willPayload":""},{"id":"ad4e812b.b4706","type":"comment","z":"86a4d54.bf68528","name":"Aidan wall off at 10","info":"","x":110,"y":40,"wires":[]},{"id":"a8fa45a2.7008b8","type":"inject","z":"86a4d54.bf68528","name":"10:00pm","topic":"","payload":"1","payloadType":"str","repeat":"","crontab":"00 22 * * *","once":false,"onceDelay":0.1,"x":120,"y":100,"wires":[["76e94fbe.34ce6"]]},{"id":"76e94fbe.34ce6","type":"api-call-service","z":"86a4d54.bf68528","name":"Aidan Wall Off","server":"437908d0.d1c828","service_domain":"switch","service":"turn_off","data":"{ \"entity_id\" : \"switch.zooz_zen07_mini_plug_switch\" }","mergecontext":"","x":310,"y":100,"wires":[[]]},{"id":"1cf4a6a8.521c79","type":"comment","z":"86a4d54.bf68528","name":"Lake Pump AutoOff","info":"","x":110,"y":200,"wires":[]},{"id":"817f9af5.589c78","type":"server-state-changed","z":"86a4d54.bf68528","name":"Lake Pump Status","server":"437908d0.d1c828","entityidfilter":"switch.switch_2","entityidfiltertype":"substring","haltifstate":"","x":110,"y":240,"wires":[["faa8ff20.3fc33"]]},{"id":"faa8ff20.3fc33","type":"switch","z":"86a4d54.bf68528","name":"on?","property":"payload","propertyType":"msg","rules":[{"t":"eq","v":"off","vt":"str"},{"t":"eq","v":"on","vt":"str"}],"checkall":"true","repair":false,"outputs":2,"x":310,"y":240,"wires":[["2aaa144d.c2efbc"],["b6a7768e.e36618"]]},{"id":"f34c83db.f7d95","type":"stoptimer","z":"86a4d54.bf68528","duration":"90","units":"Minute","payloadtype":"num","payloadval":"0","name":"","x":760,"y":200,"wires":[["858f43a5.ed673"],[]]},{"id":"858f43a5.ed673","type":"api-call-service","z":"86a4d54.bf68528","name":"Lake Pump Off","server":"437908d0.d1c828","service_domain":"switch","service":"turn_off","data":"{ \"entity_id\" : \"switch.switch_2\" }","mergecontext":"","x":960,"y":240,"wires":[[]]},{"id":"b6a7768e.e36618","type":"time-range-switch","z":"86a4d54.bf68528","name":"Day/Night","lat":"45.222306","lon":"-93.728376","startTime":"sunrise","endTime":"sunset","startOffset":0,"endOffset":0,"x":580,"y":240,"wires":[["f34c83db.f7d95"],["858f43a5.ed673"]]},{"id":"fe072df1.2da36","type":"comment","z":"86a4d54.bf68528","name":"Kitchen light with Garage Door at Night","info":"","x":170,"y":380,"wires":[]},{"id":"fbd05646.d34598","type":"server-state-changed","z":"86a4d54.bf68528","name":"Garage Door 1 Status","server":"437908d0.d1c828","entityidfilter":"binary_sensor.garage_door_one","entityidfiltertype":"substring","haltifstate":"","x":120,"y":440,"wires":[["90a5589b.8467e8"]]},{"id":"1576207.2bb65e","type":"server-state-changed","z":"86a4d54.bf68528","name":"Garage Door 2 Status","server":"437908d0.d1c828","entityidfilter":"binary_sensor.garage_door_two","entityidfiltertype":"substring","haltifstate":"","x":120,"y":480,"wires":[["90a5589b.8467e8"]]},{"id":"e29a29dd.a1e008","type":"api-call-service","z":"86a4d54.bf68528","name":"Kitchen Lights On","server":"437908d0.d1c828","service_domain":"switch","service":"turn_on","data":"{ \"entity_id\" : \"switch.switch_5\" }","mergecontext":"","x":610,"y":460,"wires":[[]]},{"id":"db5ad824.aa1998","type":"api-call-service","z":"86a4d54.bf68528","name":"Send Text","server":"437908d0.d1c828","service_domain":"notify","service":"twilio","data":"{ \"message\" : \"Garage Door Open\", \"target\" : \"16512692736\"}","mergecontext":"","x":1120,"y":640,"wires":[[]]},{"id":"c78726b4.bca5f8","type":"time-range-switch","z":"86a4d54.bf68528","name":"Day/Night","lat":"45.222306","lon":"-93.728376","startTime":"sunrise","endTime":"sunset","startOffset":0,"endOffset":0,"x":920,"y":640,"wires":[[],["db5ad824.aa1998"]]},{"id":"fe34d6a2.f57ea8","type":"stoptimer","z":"86a4d54.bf68528","duration":"10","units":"Minute","payloadtype":"num","payloadval":"0","name":"","x":720,"y":640,"wires":[["c78726b4.bca5f8"],[]]},{"id":"d6219e10.334bd","type":"change","z":"86a4d54.bf68528","name":"Stop if Closed","rules":[{"t":"set","p":"payload","pt":"msg","to":"STOP","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":520,"y":700,"wires":[["fe34d6a2.f57ea8"]]},{"id":"688417a9.88d878","type":"switch","z":"86a4d54.bf68528","name":"open?","property":"payload","propertyType":"msg","rules":[{"t":"eq","v":"on","vt":"str"},{"t":"eq","v":"off","vt":"str"}],"checkall":"true","repair":false,"outputs":2,"x":330,"y":640,"wires":[["fe34d6a2.f57ea8"],["d6219e10.334bd"]]},{"id":"92de8b4b.827218","type":"server-state-changed","z":"86a4d54.bf68528","name":"Garage Door 1 Status","server":"437908d0.d1c828","entityidfilter":"binary_sensor.garage_door_one","entityidfiltertype":"substring","haltifstate":"","x":120,"y":640,"wires":[["688417a9.88d878"]]},{"id":"87cd4239.a1e3b","type":"comment","z":"86a4d54.bf68528","name":"Garage door open after dark","info":"","x":140,"y":580,"wires":[]},{"id":"5f39da50.96a054","type":"inject","z":"86a4d54.bf68528","name":"","topic":"","payload":"on","payloadType":"str","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":110,"y":720,"wires":[["688417a9.88d878"]]},{"id":"32f99395.c0ce7c","type":"inject","z":"86a4d54.bf68528","name":"","topic":"","payload":"off","payloadType":"str","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":110,"y":780,"wires":[["688417a9.88d878"]]},{"id":"90a5589b.8467e8","type":"time-range-switch","z":"86a4d54.bf68528","name":"Day/Night","lat":"45.222306","lon":"-93.728376","startTime":"sunrise","endTime":"sunset","startOffset":0,"endOffset":0,"x":360,"y":460,"wires":[[],["e29a29dd.a1e008"]]},{"id":"b7f0cbe8.5b4728","type":"comment","z":"86a4d54.bf68528","name":"Water Grass Seed","info":"","x":110,"y":840,"wires":[]},{"id":"700d34c6.2201fc","type":"inject","z":"86a4d54.bf68528","name":"8:00","topic":"","payload":"","payloadType":"date","repeat":"","crontab":"00 08 * * *","once":false,"onceDelay":0.1,"x":110,"y":900,"wires":[[]]},{"id":"a8a2a9d6.bafe58","type":"inject","z":"86a4d54.bf68528","name":"11:30","topic":"","payload":"","payloadType":"date","repeat":"","crontab":"30 11 * * *","once":false,"onceDelay":0.1,"x":120,"y":960,"wires":[[]]},{"id":"9948328e.3e4db","type":"api-call-service","z":"86a4d54.bf68528","name":"Lake Pump ON","server":"437908d0.d1c828","service_domain":"switch","service":"turn_on","data":"{ \"entity_id\" : \"switch.switch_2\" }","mergecontext":"","x":360,"y":960,"wires":[["f7517ba7.601528"]]},{"id":"f7517ba7.601528","type":"stoptimer","z":"86a4d54.bf68528","duration":"7","units":"Minute","payloadtype":"num","payloadval":"0","name":"","x":560,"y":960,"wires":[["e355a92e.dc6658"],[]]},{"id":"379ff06.9f2b81","type":"api-call-service","z":"86a4d54.bf68528","name":"Lake Pump Off","server":"437908d0.d1c828","service_domain":"switch","service":"turn_off","data":"{ \"entity_id\" : \"switch.switch_2\" }","mergecontext":"","x":1120,"y":960,"wires":[[]]},{"id":"28cedf52.8d08f","type":"inject","z":"86a4d54.bf68528","name":"15:00","topic":"","payload":"","payloadType":"date","repeat":"","crontab":"00 15 * * *","once":false,"onceDelay":0.1,"x":120,"y":1020,"wires":[[]]},{"id":"adedd7d5.b31c18","type":"inject","z":"86a4d54.bf68528","name":"18:00","topic":"","payload":"","payloadType":"date","repeat":"","crontab":"00 18 * * *","once":false,"onceDelay":0.1,"x":120,"y":1080,"wires":[[]]},{"id":"2aaa144d.c2efbc","type":"change","z":"86a4d54.bf68528","name":"Stop timer","rules":[{"t":"set","p":"payload","pt":"msg","to":"STOP","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":510,"y":200,"wires":[["f34c83db.f7d95"]]},{"id":"665fdb7d.0720c4","type":"inject","z":"86a4d54.bf68528","name":"","topic":"","payload":"","payloadType":"date","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":120,"y":1140,"wires":[["9948328e.3e4db"]]},{"id":"e355a92e.dc6658","type":"change","z":"86a4d54.bf68528","name":"Convert to Off","rules":[{"t":"set","p":"payload","pt":"msg","to":"off","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":800,"y":960,"wires":[["379ff06.9f2b81","b84ff183.b8ed5"]]},{"id":"b84ff183.b8ed5","type":"stoptimer","z":"86a4d54.bf68528","duration":"5","units":"Second","payloadtype":"num","payloadval":"0","name":"","x":960,"y":880,"wires":[["379ff06.9f2b81"],[]]},{"id":"3db09d1e.e33102","type":"comment","z":"98a9214a.62958","name":"Push lake temp to Thingsboard","info":"https://flows.nodered.org/node/node-red-contrib-azure-iot-hub","x":150,"y":40,"wires":[]},{"id":"3ff4021f.54487e","type":"mqtt in","z":"98a9214a.62958","name":"Lake Temp","topic":"/esp/beBeeLakeTemp","qos":"2","broker":"a494f0a7.6f383","x":100,"y":100,"wires":[["710585b0.e038cc"]]},{"id":"710585b0.e038cc","type":"function","z":"98a9214a.62958","name":"Craft message for IoTHub ","func":"msg.payload = '{\"temperature\":'+msg.payload+'}';\nreturn msg;\n","outputs":1,"noerr":0,"x":330,"y":100,"wires":[["3f91848c.d1a2dc","91500a86.300f68"]]},{"id":"3f91848c.d1a2dc","type":"mqtt out","z":"98a9214a.62958","name":"thingsBoard","topic":"v1/devices/me/telemetry","qos":"","retain":"","broker":"e3d8b6b2.ffd858","x":570,"y":100,"wires":[]},{"id":"71d3c75c.52d978","type":"inject","z":"86a4d54.bf68528","name":"","topic":"","payload":"","payloadType":"date","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":100,"y":160,"wires":[["76e94fbe.34ce6"]]},{"id":"152180b.adfe37f","type":"api-call-service","z":"86a4d54.bf68528","name":"XmasLightsOn","server":"437908d0.d1c828","service_domain":"switch","service":"turn_on","data":"{ \"entity_id\" : \"switch.wemo1\" }","mergecontext":"","x":340,"y":1280,"wires":[["e94b16a2.bf60e8"]]},{"id":"e94b16a2.bf60e8","type":"stoptimer","z":"86a4d54.bf68528","duration":"480","units":"Minute","payloadtype":"num","payloadval":"0","name":"","x":550,"y":1280,"wires":[["8f107050.df612"],[]]},{"id":"8f107050.df612","type":"change","z":"86a4d54.bf68528","name":"Convert to Off","rules":[{"t":"set","p":"payload","pt":"msg","to":"off","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":780,"y":1280,"wires":[["6bb6d425.7df27c","30cbad1.696c852"]]},{"id":"6bb6d425.7df27c","type":"stoptimer","z":"86a4d54.bf68528","duration":"5","units":"Second","payloadtype":"num","payloadval":"0","name":"","x":940,"y":1200,"wires":[["1c2e2d41.b5cc53"],[]]},{"id":"586a749e.ecccbc","type":"sunrise","z":"86a4d54.bf68528","name":"Sunset","lat":"45.4262","lon":"-94.1198","start":"sunrise","end":"sunset","x":110,"y":1280,"wires":[[],["be3996b1.8ff758"]]},{"id":"be3996b1.8ff758","type":"switch","z":"86a4d54.bf68528","name":"Night?","property":"payload","propertyType":"msg","rules":[{"t":"eq","v":"1","vt":"str"},{"t":"eq","v":"0","vt":"str"}],"checkall":"true","repair":false,"outputs":2,"x":230,"y":1220,"wires":[[],["152180b.adfe37f"]]},{"id":"1c2e2d41.b5cc53","type":"change","z":"86a4d54.bf68528","name":"Convert to Off","rules":[{"t":"set","p":"payload","pt":"msg","to":"off","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":1160,"y":1200,"wires":[["30cbad1.696c852"]]},{"id":"30cbad1.696c852","type":"api-call-service","z":"86a4d54.bf68528","name":"Xmas Light Off","server":"437908d0.d1c828","service_domain":"switch","service":"turn_off","data":"{ \"entity_id\" : \"switch.wemo1\" }","mergecontext":"","x":1380,"y":1280,"wires":[[]]},{"id":"f5c93037.b618f","type":"comment","z":"86a4d54.bf68528","name":"Use Bottom Output","info":"","x":210,"y":1320,"wires":[]},{"id":"ebca4b6c.3bbd88","type":"comment","z":"86a4d54.bf68528","name":"Amy Heater","info":"","x":110,"y":1440,"wires":[]},{"id":"416214b5.afd25c","type":"server-state-changed","z":"86a4d54.bf68528","name":"Amy Heater","server":"437908d0.d1c828","entityidfilter":"switch.wemo2","entityidfiltertype":"substring","haltifstate":"","x":110,"y":1480,"wires":[["9b915da2.362f1"]]},{"id":"9b915da2.362f1","type":"switch","z":"86a4d54.bf68528","name":"on?","property":"payload","propertyType":"msg","rules":[{"t":"eq","v":"off","vt":"str"},{"t":"eq","v":"on","vt":"str"}],"checkall":"true","repair":false,"outputs":2,"x":330,"y":1480,"wires":[["4a3d291.864ead8"],["82d39707.3dfd98"]]},{"id":"82d39707.3dfd98","type":"stoptimer","z":"86a4d54.bf68528","duration":"8","units":"Hour","payloadtype":"num","payloadval":"0","name":"","x":710,"y":1480,"wires":[["b6394f29.bf0e9"],[]]},{"id":"b6394f29.bf0e9","type":"api-call-service","z":"86a4d54.bf68528","name":"Heater Off","server":"437908d0.d1c828","service_domain":"switch","service":"turn_off","data":"{ \"entity_id\" : \"switch.wemo2\" }","mergecontext":"","x":970,"y":1480,"wires":[[]]},{"id":"4a3d291.864ead8","type":"change","z":"86a4d54.bf68528","name":"Stop timer","rules":[{"t":"set","p":"payload","pt":"msg","to":"STOP","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":530,"y":1440,"wires":[["82d39707.3dfd98"]]},{"id":"f347065d.48b958","type":"comment","z":"86a4d54.bf68528","name":"Xmas Lights","info":"","x":110,"y":1180,"wires":[]},{"id":"91500a86.300f68","type":"debug","z":"98a9214a.62958","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","x":570,"y":160,"wires":[]},{"id":"479c5a4f.efd994","type":"inject","z":"86a4d54.bf68528","name":"","topic":"","payload":"","payloadType":"date","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":540,"y":1560,"wires":[["82d39707.3dfd98"]]}]
+[
+  {
+    "id": "a4e38abf.e8aa58",
+    "type": "tab",
+    "label": "Flow 1",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "86a4d54.bf68528",
+    "type": "tab",
+    "label": "Flow 1",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "98a9214a.62958",
+    "type": "tab",
+    "label": "Flow 2",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "9dff7b9e.63d978",
+    "type": "server",
+    "z": "",
+    "name": "Home Assistant",
+    "url": "http://hassio/homeassistant",
+    "pass": "80218efd74fb7ea19d0cb555e29b8e74c45fdbed4f7e0c429327062d981f50fc"
+  },
+  {
+    "id": "437908d0.d1c828",
+    "type": "server",
+    "z": "",
+    "name": "Home Assistant",
+    "url": "http://localhost:8123",
+    "pass": "killians1"
+  },
+  {
+    "id": "3d137f10.3bc04",
+    "type": "server",
+    "z": "",
+    "name": "Home Assistant",
+    "url": "http://localhost:8123",
+    "pass": "XXXXXX"
+  },
+  {
+    "id": "a494f0a7.6f383",
+    "type": "mqtt-broker",
+    "z": "",
+    "name": "ha MQTT",
+    "broker": "ha.widgetninja.net",
+    "port": "1883",
+    "clientid": "",
+    "usetls": false,
+    "compatmode": true,
+    "keepalive": "60",
+    "cleansession": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthPayload": "",
+    "closeTopic": "",
+    "closeQos": "0",
+    "closePayload": "",
+    "willTopic": "",
+    "willQos": "0",
+    "willPayload": ""
+  },
+  {
+    "id": "e3d8b6b2.ffd858",
+    "type": "mqtt-broker",
+    "z": "",
+    "name": "thingsBoardBeeBeeLakeTemp",
+    "broker": "thingsboard.northcentralus.cloudapp.azure.com",
+    "port": "1883",
+    "clientid": "",
+    "usetls": false,
+    "compatmode": true,
+    "keepalive": "60",
+    "cleansession": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthPayload": "",
+    "closeTopic": "",
+    "closeQos": "0",
+    "closePayload": "",
+    "willTopic": "",
+    "willQos": "0",
+    "willPayload": ""
+  },
+  {
+    "id": "ad4e812b.b4706",
+    "type": "comment",
+    "z": "86a4d54.bf68528",
+    "name": "Aidan wall off at 10",
+    "info": "",
+    "x": 110,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "a8fa45a2.7008b8",
+    "type": "inject",
+    "z": "86a4d54.bf68528",
+    "name": "10:00pm",
+    "topic": "",
+    "payload": "1",
+    "payloadType": "str",
+    "repeat": "",
+    "crontab": "00 22 * * *",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 120,
+    "y": 100,
+    "wires": [
+      [
+        "76e94fbe.34ce6"
+      ]
+    ]
+  },
+  {
+    "id": "76e94fbe.34ce6",
+    "type": "api-call-service",
+    "z": "86a4d54.bf68528",
+    "name": "Aidan Wall Off",
+    "server": "437908d0.d1c828",
+    "service_domain": "switch",
+    "service": "turn_off",
+    "data": "{ \"entity_id\" : \"switch.zooz_zen07_mini_plug_switch\" }",
+    "mergecontext": "",
+    "x": 310,
+    "y": 100,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "1cf4a6a8.521c79",
+    "type": "comment",
+    "z": "86a4d54.bf68528",
+    "name": "Lake Pump AutoOff",
+    "info": "",
+    "x": 110,
+    "y": 200,
+    "wires": []
+  },
+  {
+    "id": "817f9af5.589c78",
+    "type": "server-state-changed",
+    "z": "86a4d54.bf68528",
+    "name": "Lake Pump Status",
+    "server": "437908d0.d1c828",
+    "entityidfilter": "switch.switch_2",
+    "entityidfiltertype": "substring",
+    "haltifstate": "",
+    "x": 110,
+    "y": 240,
+    "wires": [
+      [
+        "faa8ff20.3fc33"
+      ]
+    ]
+  },
+  {
+    "id": "faa8ff20.3fc33",
+    "type": "switch",
+    "z": "86a4d54.bf68528",
+    "name": "on?",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "off",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "on",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 2,
+    "x": 310,
+    "y": 240,
+    "wires": [
+      [
+        "2aaa144d.c2efbc"
+      ],
+      [
+        "b6a7768e.e36618"
+      ]
+    ]
+  },
+  {
+    "id": "f34c83db.f7d95",
+    "type": "stoptimer",
+    "z": "86a4d54.bf68528",
+    "duration": "90",
+    "units": "Minute",
+    "payloadtype": "num",
+    "payloadval": "0",
+    "name": "",
+    "x": 760,
+    "y": 200,
+    "wires": [
+      [
+        "858f43a5.ed673"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "858f43a5.ed673",
+    "type": "api-call-service",
+    "z": "86a4d54.bf68528",
+    "name": "Lake Pump Off",
+    "server": "437908d0.d1c828",
+    "service_domain": "switch",
+    "service": "turn_off",
+    "data": "{ \"entity_id\" : \"switch.switch_2\" }",
+    "mergecontext": "",
+    "x": 960,
+    "y": 240,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "b6a7768e.e36618",
+    "type": "time-range-switch",
+    "z": "86a4d54.bf68528",
+    "name": "Day/Night",
+    "lat": "45.222306",
+    "lon": "-93.728376",
+    "startTime": "sunrise",
+    "endTime": "sunset",
+    "startOffset": 0,
+    "endOffset": 0,
+    "x": 580,
+    "y": 240,
+    "wires": [
+      [
+        "f34c83db.f7d95"
+      ],
+      [
+        "858f43a5.ed673"
+      ]
+    ]
+  },
+  {
+    "id": "fe072df1.2da36",
+    "type": "comment",
+    "z": "86a4d54.bf68528",
+    "name": "Kitchen light with Garage Door at Night",
+    "info": "",
+    "x": 170,
+    "y": 380,
+    "wires": []
+  },
+  {
+    "id": "fbd05646.d34598",
+    "type": "server-state-changed",
+    "z": "86a4d54.bf68528",
+    "name": "Garage Door 1 Status",
+    "server": "437908d0.d1c828",
+    "entityidfilter": "binary_sensor.garage_door_one",
+    "entityidfiltertype": "substring",
+    "haltifstate": "",
+    "x": 120,
+    "y": 440,
+    "wires": [
+      [
+        "90a5589b.8467e8"
+      ]
+    ]
+  },
+  {
+    "id": "1576207.2bb65e",
+    "type": "server-state-changed",
+    "z": "86a4d54.bf68528",
+    "name": "Garage Door 2 Status",
+    "server": "437908d0.d1c828",
+    "entityidfilter": "binary_sensor.garage_door_two",
+    "entityidfiltertype": "substring",
+    "haltifstate": "",
+    "x": 120,
+    "y": 480,
+    "wires": [
+      [
+        "90a5589b.8467e8"
+      ]
+    ]
+  },
+  {
+    "id": "e29a29dd.a1e008",
+    "type": "api-call-service",
+    "z": "86a4d54.bf68528",
+    "name": "Kitchen Lights On",
+    "server": "437908d0.d1c828",
+    "service_domain": "switch",
+    "service": "turn_on",
+    "data": "{ \"entity_id\" : \"switch.switch_5\" }",
+    "mergecontext": "",
+    "x": 610,
+    "y": 460,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "db5ad824.aa1998",
+    "type": "api-call-service",
+    "z": "86a4d54.bf68528",
+    "name": "Send Text",
+    "server": "437908d0.d1c828",
+    "service_domain": "notify",
+    "service": "twilio",
+    "data": "{ \"message\" : \"Garage Door Open\", \"target\" : \"16512692736\"}",
+    "mergecontext": "",
+    "x": 1120,
+    "y": 640,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "c78726b4.bca5f8",
+    "type": "time-range-switch",
+    "z": "86a4d54.bf68528",
+    "name": "Day/Night",
+    "lat": "45.222306",
+    "lon": "-93.728376",
+    "startTime": "sunrise",
+    "endTime": "sunset",
+    "startOffset": 0,
+    "endOffset": 0,
+    "x": 920,
+    "y": 640,
+    "wires": [
+      [],
+      [
+        "db5ad824.aa1998"
+      ]
+    ]
+  },
+  {
+    "id": "fe34d6a2.f57ea8",
+    "type": "stoptimer",
+    "z": "86a4d54.bf68528",
+    "duration": "10",
+    "units": "Minute",
+    "payloadtype": "num",
+    "payloadval": "0",
+    "name": "",
+    "x": 720,
+    "y": 640,
+    "wires": [
+      [
+        "c78726b4.bca5f8"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "d6219e10.334bd",
+    "type": "change",
+    "z": "86a4d54.bf68528",
+    "name": "Stop if Closed",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "STOP",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 520,
+    "y": 700,
+    "wires": [
+      [
+        "fe34d6a2.f57ea8"
+      ]
+    ]
+  },
+  {
+    "id": "688417a9.88d878",
+    "type": "switch",
+    "z": "86a4d54.bf68528",
+    "name": "open?",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "on",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "off",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 2,
+    "x": 330,
+    "y": 640,
+    "wires": [
+      [
+        "fe34d6a2.f57ea8"
+      ],
+      [
+        "d6219e10.334bd"
+      ]
+    ]
+  },
+  {
+    "id": "92de8b4b.827218",
+    "type": "server-state-changed",
+    "z": "86a4d54.bf68528",
+    "name": "Garage Door 1 Status",
+    "server": "437908d0.d1c828",
+    "entityidfilter": "binary_sensor.garage_door_one",
+    "entityidfiltertype": "substring",
+    "haltifstate": "",
+    "x": 120,
+    "y": 640,
+    "wires": [
+      [
+        "688417a9.88d878"
+      ]
+    ]
+  },
+  {
+    "id": "87cd4239.a1e3b",
+    "type": "comment",
+    "z": "86a4d54.bf68528",
+    "name": "Garage door open after dark",
+    "info": "",
+    "x": 140,
+    "y": 580,
+    "wires": []
+  },
+  {
+    "id": "5f39da50.96a054",
+    "type": "inject",
+    "z": "86a4d54.bf68528",
+    "name": "",
+    "topic": "",
+    "payload": "on",
+    "payloadType": "str",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 110,
+    "y": 720,
+    "wires": [
+      [
+        "688417a9.88d878"
+      ]
+    ]
+  },
+  {
+    "id": "32f99395.c0ce7c",
+    "type": "inject",
+    "z": "86a4d54.bf68528",
+    "name": "",
+    "topic": "",
+    "payload": "off",
+    "payloadType": "str",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 110,
+    "y": 780,
+    "wires": [
+      [
+        "688417a9.88d878"
+      ]
+    ]
+  },
+  {
+    "id": "90a5589b.8467e8",
+    "type": "time-range-switch",
+    "z": "86a4d54.bf68528",
+    "name": "Day/Night",
+    "lat": "45.222306",
+    "lon": "-93.728376",
+    "startTime": "sunrise",
+    "endTime": "sunset",
+    "startOffset": 0,
+    "endOffset": 0,
+    "x": 360,
+    "y": 460,
+    "wires": [
+      [],
+      [
+        "e29a29dd.a1e008"
+      ]
+    ]
+  },
+  {
+    "id": "b7f0cbe8.5b4728",
+    "type": "comment",
+    "z": "86a4d54.bf68528",
+    "name": "Water Grass Seed",
+    "info": "",
+    "x": 110,
+    "y": 840,
+    "wires": []
+  },
+  {
+    "id": "700d34c6.2201fc",
+    "type": "inject",
+    "z": "86a4d54.bf68528",
+    "name": "8:00",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "00 08 * * *",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 110,
+    "y": 900,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "a8a2a9d6.bafe58",
+    "type": "inject",
+    "z": "86a4d54.bf68528",
+    "name": "11:30",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "30 11 * * *",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 120,
+    "y": 960,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "9948328e.3e4db",
+    "type": "api-call-service",
+    "z": "86a4d54.bf68528",
+    "name": "Lake Pump ON",
+    "server": "437908d0.d1c828",
+    "service_domain": "switch",
+    "service": "turn_on",
+    "data": "{ \"entity_id\" : \"switch.switch_2\" }",
+    "mergecontext": "",
+    "x": 360,
+    "y": 960,
+    "wires": [
+      [
+        "f7517ba7.601528"
+      ]
+    ]
+  },
+  {
+    "id": "f7517ba7.601528",
+    "type": "stoptimer",
+    "z": "86a4d54.bf68528",
+    "duration": "7",
+    "units": "Minute",
+    "payloadtype": "num",
+    "payloadval": "0",
+    "name": "",
+    "x": 560,
+    "y": 960,
+    "wires": [
+      [
+        "e355a92e.dc6658"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "379ff06.9f2b81",
+    "type": "api-call-service",
+    "z": "86a4d54.bf68528",
+    "name": "Lake Pump Off",
+    "server": "437908d0.d1c828",
+    "service_domain": "switch",
+    "service": "turn_off",
+    "data": "{ \"entity_id\" : \"switch.switch_2\" }",
+    "mergecontext": "",
+    "x": 1120,
+    "y": 960,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "28cedf52.8d08f",
+    "type": "inject",
+    "z": "86a4d54.bf68528",
+    "name": "15:00",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "00 15 * * *",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 120,
+    "y": 1020,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "adedd7d5.b31c18",
+    "type": "inject",
+    "z": "86a4d54.bf68528",
+    "name": "18:00",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "00 18 * * *",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 120,
+    "y": 1080,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "2aaa144d.c2efbc",
+    "type": "change",
+    "z": "86a4d54.bf68528",
+    "name": "Stop timer",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "STOP",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 510,
+    "y": 200,
+    "wires": [
+      [
+        "f34c83db.f7d95"
+      ]
+    ]
+  },
+  {
+    "id": "665fdb7d.0720c4",
+    "type": "inject",
+    "z": "86a4d54.bf68528",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 120,
+    "y": 1140,
+    "wires": [
+      [
+        "9948328e.3e4db"
+      ]
+    ]
+  },
+  {
+    "id": "e355a92e.dc6658",
+    "type": "change",
+    "z": "86a4d54.bf68528",
+    "name": "Convert to Off",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "off",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 800,
+    "y": 960,
+    "wires": [
+      [
+        "379ff06.9f2b81",
+        "b84ff183.b8ed5"
+      ]
+    ]
+  },
+  {
+    "id": "b84ff183.b8ed5",
+    "type": "stoptimer",
+    "z": "86a4d54.bf68528",
+    "duration": "5",
+    "units": "Second",
+    "payloadtype": "num",
+    "payloadval": "0",
+    "name": "",
+    "x": 960,
+    "y": 880,
+    "wires": [
+      [
+        "379ff06.9f2b81"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "3db09d1e.e33102",
+    "type": "comment",
+    "z": "98a9214a.62958",
+    "name": "Push lake temp to Thingsboard",
+    "info": "https://flows.nodered.org/node/node-red-contrib-azure-iot-hub",
+    "x": 150,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "3ff4021f.54487e",
+    "type": "mqtt in",
+    "z": "98a9214a.62958",
+    "name": "Lake Temp",
+    "topic": "/esp/beBeeLakeTemp",
+    "qos": "2",
+    "broker": "a494f0a7.6f383",
+    "x": 100,
+    "y": 100,
+    "wires": [
+      [
+        "710585b0.e038cc"
+      ]
+    ]
+  },
+  {
+    "id": "710585b0.e038cc",
+    "type": "function",
+    "z": "98a9214a.62958",
+    "name": "Craft message for IoTHub ",
+    "func": "msg.payload = '{\"temperature\":'+msg.payload+'}';\nreturn msg;\n",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 330,
+    "y": 100,
+    "wires": [
+      [
+        "3f91848c.d1a2dc",
+        "91500a86.300f68"
+      ]
+    ]
+  },
+  {
+    "id": "3f91848c.d1a2dc",
+    "type": "mqtt out",
+    "z": "98a9214a.62958",
+    "name": "thingsBoard",
+    "topic": "v1/devices/me/telemetry",
+    "qos": "",
+    "retain": "",
+    "broker": "e3d8b6b2.ffd858",
+    "x": 570,
+    "y": 100,
+    "wires": []
+  },
+  {
+    "id": "71d3c75c.52d978",
+    "type": "inject",
+    "z": "86a4d54.bf68528",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 100,
+    "y": 160,
+    "wires": [
+      [
+        "76e94fbe.34ce6"
+      ]
+    ]
+  },
+  {
+    "id": "152180b.adfe37f",
+    "type": "api-call-service",
+    "z": "86a4d54.bf68528",
+    "name": "XmasLightsOn",
+    "server": "437908d0.d1c828",
+    "service_domain": "switch",
+    "service": "turn_on",
+    "data": "{ \"entity_id\" : \"switch.wemo1\" }",
+    "mergecontext": "",
+    "x": 340,
+    "y": 1280,
+    "wires": [
+      [
+        "e94b16a2.bf60e8"
+      ]
+    ]
+  },
+  {
+    "id": "e94b16a2.bf60e8",
+    "type": "stoptimer",
+    "z": "86a4d54.bf68528",
+    "duration": "480",
+    "units": "Minute",
+    "payloadtype": "num",
+    "payloadval": "0",
+    "name": "",
+    "x": 550,
+    "y": 1280,
+    "wires": [
+      [
+        "8f107050.df612"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "8f107050.df612",
+    "type": "change",
+    "z": "86a4d54.bf68528",
+    "name": "Convert to Off",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "off",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 780,
+    "y": 1280,
+    "wires": [
+      [
+        "6bb6d425.7df27c",
+        "30cbad1.696c852"
+      ]
+    ]
+  },
+  {
+    "id": "6bb6d425.7df27c",
+    "type": "stoptimer",
+    "z": "86a4d54.bf68528",
+    "duration": "5",
+    "units": "Second",
+    "payloadtype": "num",
+    "payloadval": "0",
+    "name": "",
+    "x": 940,
+    "y": 1200,
+    "wires": [
+      [
+        "1c2e2d41.b5cc53"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "586a749e.ecccbc",
+    "type": "sunrise",
+    "z": "86a4d54.bf68528",
+    "name": "Sunset",
+    "lat": "45.4262",
+    "lon": "-94.1198",
+    "start": "sunrise",
+    "end": "sunset",
+    "x": 110,
+    "y": 1280,
+    "wires": [
+      [],
+      [
+        "be3996b1.8ff758"
+      ]
+    ]
+  },
+  {
+    "id": "be3996b1.8ff758",
+    "type": "switch",
+    "z": "86a4d54.bf68528",
+    "name": "Night?",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "1",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "0",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 2,
+    "x": 230,
+    "y": 1220,
+    "wires": [
+      [],
+      [
+        "152180b.adfe37f"
+      ]
+    ]
+  },
+  {
+    "id": "1c2e2d41.b5cc53",
+    "type": "change",
+    "z": "86a4d54.bf68528",
+    "name": "Convert to Off",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "off",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1160,
+    "y": 1200,
+    "wires": [
+      [
+        "30cbad1.696c852"
+      ]
+    ]
+  },
+  {
+    "id": "30cbad1.696c852",
+    "type": "api-call-service",
+    "z": "86a4d54.bf68528",
+    "name": "Xmas Light Off",
+    "server": "437908d0.d1c828",
+    "service_domain": "switch",
+    "service": "turn_off",
+    "data": "{ \"entity_id\" : \"switch.wemo1\" }",
+    "mergecontext": "",
+    "x": 1380,
+    "y": 1280,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "f5c93037.b618f",
+    "type": "comment",
+    "z": "86a4d54.bf68528",
+    "name": "Use Bottom Output",
+    "info": "",
+    "x": 210,
+    "y": 1320,
+    "wires": []
+  },
+  {
+    "id": "ebca4b6c.3bbd88",
+    "type": "comment",
+    "z": "86a4d54.bf68528",
+    "name": "Amy Heater",
+    "info": "",
+    "x": 110,
+    "y": 1440,
+    "wires": []
+  },
+  {
+    "id": "416214b5.afd25c",
+    "type": "server-state-changed",
+    "z": "86a4d54.bf68528",
+    "name": "Amy Heater",
+    "server": "437908d0.d1c828",
+    "entityidfilter": "switch.wemo2",
+    "entityidfiltertype": "substring",
+    "haltifstate": "",
+    "x": 110,
+    "y": 1480,
+    "wires": [
+      [
+        "9b915da2.362f1"
+      ]
+    ]
+  },
+  {
+    "id": "9b915da2.362f1",
+    "type": "switch",
+    "z": "86a4d54.bf68528",
+    "name": "on?",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "off",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "on",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 2,
+    "x": 330,
+    "y": 1480,
+    "wires": [
+      [
+        "4a3d291.864ead8"
+      ],
+      [
+        "82d39707.3dfd98"
+      ]
+    ]
+  },
+  {
+    "id": "82d39707.3dfd98",
+    "type": "stoptimer",
+    "z": "86a4d54.bf68528",
+    "duration": "8",
+    "units": "Hour",
+    "payloadtype": "num",
+    "payloadval": "0",
+    "name": "",
+    "x": 710,
+    "y": 1480,
+    "wires": [
+      [
+        "b6394f29.bf0e9"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "b6394f29.bf0e9",
+    "type": "api-call-service",
+    "z": "86a4d54.bf68528",
+    "name": "Heater Off",
+    "server": "437908d0.d1c828",
+    "service_domain": "switch",
+    "service": "turn_off",
+    "data": "{ \"entity_id\" : \"switch.wemo2\" }",
+    "mergecontext": "",
+    "x": 970,
+    "y": 1480,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "4a3d291.864ead8",
+    "type": "change",
+    "z": "86a4d54.bf68528",
+    "name": "Stop timer",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "STOP",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 530,
+    "y": 1440,
+    "wires": [
+      [
+        "82d39707.3dfd98"
+      ]
+    ]
+  },
+  {
+    "id": "f347065d.48b958",
+    "type": "comment",
+    "z": "86a4d54.bf68528",
+    "name": "Xmas Lights",
+    "info": "",
+    "x": 110,
+    "y": 1180,
+    "wires": []
+  },
+  {
+    "id": "91500a86.300f68",
+    "type": "debug",
+    "z": "98a9214a.62958",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "x": 570,
+    "y": 160,
+    "wires": []
+  },
+  {
+    "id": "479c5a4f.efd994",
+    "type": "inject",
+    "z": "86a4d54.bf68528",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 540,
+    "y": 1560,
+    "wires": [
+      [
+        "82d39707.3dfd98"
+      ]
+    ]
+  }
+]

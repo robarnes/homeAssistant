@@ -104,6 +104,12 @@ notify:
   - name: twilio
     platform: twilio_sms
     from_number: +19133254454
+  - name:  parent_iphones
+    platform: group
+    services:
+      - service: ios_amb_iphone
+      - service: ios_rob
+#      - service: ios_aidan
 
 mqtt:
   broker: ha.widgetninja.net
