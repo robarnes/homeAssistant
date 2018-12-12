@@ -210,11 +210,12 @@ automation old:
         topic: "/esp/doorbell/state"
         payload: 'ON'
     action:
-      service: notify.twilio
+      service: notify.parent_iphones
       data:
-        message: 'Doorbell, dont tell coopie!'
-        target:
-          - +16512692736
-          - +17634387841
-          - +17634982723
-          - +17634982721
+        title: "Doorbell"
+        message: "Don't tell the land shark."
+        data:
+          push:
+            thread-id: "doorbell"
+            category: camera
+          entity_id: camera.front_door
