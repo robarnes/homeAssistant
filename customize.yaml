@@ -36,8 +36,8 @@ switch.switch_5:
   icon: mdi:lightbulb
 switch.wemo1:
 #		Wemo1 miniswitch
-  friendly_name:  XmasLights
-  icon: mdi:pine-tree
+  friendly_name:  Roof Ice
+  icon: mdi:snowflake
 switch.wemo2:
 #		Wemo2 miniswitch
   friendly_name:  OfficeHeater
