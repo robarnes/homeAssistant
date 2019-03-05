@@ -109,7 +109,8 @@ notify:
     services:
       - service: ios_amb_iphone
       - service: ios_rob
-#      - service: ios_aidan
+      - service: ios_aidan
+      - service: ios_nadias_iphone 
 
 mqtt:
   broker: ha.widgetninja.net

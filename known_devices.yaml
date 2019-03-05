@@ -22,3 +22,11 @@ amb_iphone:
   name: amb iphone
   picture:
   track: true
+
+nadias_iphone:
+  hide_if_away: false
+  icon:
+  mac:
+  name: Nadia’s iPhone
+  picture:
+  track: true
