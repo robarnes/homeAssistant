@@ -13,11 +13,8 @@ default_view:
     # Add some badges
     -  binary_sensor.garage_door_one
     -  binary_sensor.garage_door_two
-    -  sensor.LakeTemp
     -  sensor.dark_sky_humidity
     -  sensor.dark_sky_temperature
-    -  sensor.zooz_zse40_4in1_sensor_temperature_4_1
-    -  sensor.zooz_zse40_4in1_sensor_relative_humidity_4_5
 misc:
   name: Misc
   view: yes
@@ -59,8 +56,8 @@ outside:
 #		Lake Lamp
     -  switch.switch
 #		Backyard Floods
-    -  switch.switch_2
-#               Lake Pump
+#    -  switch.switch_2
+#               Lake Pump (can't find this damn thing)
 zwaveDevices:
   name: zwave Devices
   entities:
@@ -81,5 +78,4 @@ darksky:
   entities:
     -  sensor.dark_sky_summary
     -  sensor.dark_sky_temperature
-    -  sensor.dark_sky_daily_high_temperature
     -  sensor.dark_sky_daily_summary

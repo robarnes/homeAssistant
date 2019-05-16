@@ -22,9 +22,9 @@ sensor.zooz_zse40_4in1_sensor_relative_humidity_4_5:
 switch.switch:
   friendly_name:  Backyard Floods
   icon: mdi:lightbulb
-switch.switch_2:
-  friendly_name:  Lake Pump
-  icon: mdi:water-pump 
+#switch.switch_2:
+#  friendly_name:  Lake Pump
+#  icon: mdi:water-pump 
 switch.switch_3:
   friendly_name:  Kitchen Recessed
   icon: mdi:lightbulb
