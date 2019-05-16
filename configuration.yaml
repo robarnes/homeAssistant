@@ -13,7 +13,10 @@ homeassistant:
   temperature_unit: F
   customize: !include customize.yaml
   auth_providers:
-   - type: trusted_networks
+    - type: trusted_networks
+      trusted_networks:
+        - 192.168.0.0/24
+        - 127.0.0.0/24
 
 zone:
   name: Home
