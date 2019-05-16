@@ -129,21 +129,18 @@ switch:
     command_topic: "/esp/doorbell/set"
     payload_on: "ON"
     payload_off: "OFF"
-    optimisitic: False
   - platform: mqtt
     name: "Garage Door One"
     state_topic: "/esp/garageDoorOne/state"
     command_topic: "/esp/garageDoorOne/set"
     payload_on: "1"
     payload_off: "0"
-    optimisitic: False
   - platform: mqtt
     name: "Garage Door Two"
     state_topic: "/esp/garageDoorTwo/state"
     command_topic: "/esp/garageDoorTwo/set"
     payload_on: "1"
     payload_off: "0"
-    optimisitic: False
 
 sensor:
   - platform: darksky
