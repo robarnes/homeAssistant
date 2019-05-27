@@ -35,10 +35,10 @@ upstairs:
   entities:
     -  switch.zooz_zen07_mini_plug_switch
 #		Aidan LED Wall
-    -  switch.wemo1
-#		Wemo1 (miniswitch) for xmas lights
+    -  switch.wemo4
+#		Wemo4 (miniswitch) for Aidans Epoxy Lamp 
     -  switch.wemo3
-#		Wemo3 (miniswitch) for unkown use
+#		Wemo3 (miniswitch) for BackupWiFi
 downstairs:
   name: Downstairs
   entities:
@@ -50,14 +50,12 @@ outside:
   entities:
     -  switch.garage_door_one
     -  switch.garage_door_two
+    -  switch.wemo1
+#		Wemo1 (miniswitch) for lake pump
     -  light.level
 #		Front Porch
-    -  light.level_2
-#		Lake Lamp
     -  switch.switch
 #		Backyard Floods
-#    -  switch.switch_2
-#               Lake Pump (can't find this damn thing)
 zwaveDevices:
   name: zwave Devices
   entities:

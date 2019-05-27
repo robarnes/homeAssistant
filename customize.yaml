@@ -22,9 +22,6 @@ sensor.zooz_zse40_4in1_sensor_relative_humidity_4_5:
 switch.switch:
   friendly_name:  Backyard Floods
   icon: mdi:lightbulb
-#switch.switch_2:
-#  friendly_name:  Lake Pump
-#  icon: mdi:water-pump 
 switch.switch_3:
   friendly_name:  Kitchen Recessed
   icon: mdi:lightbulb
@@ -36,8 +33,8 @@ switch.switch_5:
   icon: mdi:lightbulb
 switch.wemo1:
 #		Wemo1 miniswitch
-  friendly_name:  Roof Ice
-  icon: mdi:snowflake
+  friendly_name:  Lake Pump
+  icon: mdi:water-pump
 switch.wemo2:
 #		Wemo2 miniswitch
   friendly_name:  OfficeHeater
@@ -46,6 +43,22 @@ switch.wemo3:
 #		Wemo3 miniswitch
   friendly_name:  BackupWiFi
   icon: mdi:wifi
+switch.wemo4:
+#		Wemo4 miniswitch
+  friendly_name:  Aidan Lamp
+  icon: mdi:lava-lamp
+switch.wemo5:
+#		Wemo5 miniswitch
+  friendly_name:  Open
+  icon: mdi:sleep
+switch.wemo6:
+#		Wemo6 miniswitch
+  friendly_name:  Open
+  icon: mdi:sleep
+switch.wemo7:
+#		Wemo3 miniswitch
+  friendly_name:  Open
+  icon: mdi:sleep
 light.level_2:
   friendly_name:  Lake Light
   icon: mdi:lightbulb
