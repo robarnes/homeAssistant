@@ -15,6 +15,7 @@ default_view:
     -  binary_sensor.garage_door_two
     -  sensor.dark_sky_humidity
     -  sensor.dark_sky_temperature
+    -  sensor.dark_sky_wind_speed
 misc:
   name: Misc
   view: yes

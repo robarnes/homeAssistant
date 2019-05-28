@@ -167,11 +167,6 @@ sensor:
     sensors:
       iframe:
         value_template: iframe
-  - platform: mqtt
-    name: "LakeTemp"
-    state_topic: "/esp/beBeeLakeTemp"
-    qos: 0
-    unit_of_measurement: "F"
 
 binary_sensor:
   - platform: mqtt

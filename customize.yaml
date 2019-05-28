@@ -15,10 +15,6 @@ light.level:
   icon: mdi:lightbulb
   refresh_value: true
   delay: 5
-sensor.zooz_zse40_4in1_sensor_temperature_4_1:
-  friendly_name:  Family Room Temp
-sensor.zooz_zse40_4in1_sensor_relative_humidity_4_5:
-  friendly_name:  Family Room Humidity
 switch.switch:
   friendly_name:  Backyard Floods
   icon: mdi:lightbulb
