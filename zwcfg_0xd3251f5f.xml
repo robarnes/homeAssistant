@@ -40,8 +40,8 @@
 				<Value type="decimal" genre="user" instance="1" index="8" label="Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.00" />
 				<Value type="decimal" genre="user" instance="1" index="9" label="Previous Reading" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.00" />
 				<Value type="int" genre="user" instance="1" index="10" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="301" />
-				<Value type="decimal" genre="user" instance="1" index="16" label="Voltage" units="V" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="124.63" />
-				<Value type="decimal" genre="user" instance="1" index="17" label="Previous Reading" units="V" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="124.24" />
+				<Value type="decimal" genre="user" instance="1" index="16" label="Voltage" units="V" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="124.05" />
+				<Value type="decimal" genre="user" instance="1" index="17" label="Previous Reading" units="V" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="123.88" />
 				<Value type="int" genre="user" instance="1" index="18" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="301" />
 				<Value type="decimal" genre="user" instance="1" index="20" label="Current" units="A" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.00" />
 				<Value type="decimal" genre="user" instance="1" index="21" label="Previous Reading" units="A" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.00" />
@@ -155,6 +155,7 @@
 				<Associations num_groups="3">
 					<Group index="1" max_associations="5" label="Lifeline" auto="true">
 						<Node id="1" />
+						<Node id="255" />
 					</Group>
 					<Group index="2" max_associations="5" label="Status" auto="false" />
 					<Group index="3" max_associations="5" label="Notifications" auto="false" />
@@ -380,6 +381,7 @@
 				<Associations num_groups="3">
 					<Group index="1" max_associations="5" label="Lifeline" auto="true">
 						<Node id="1" />
+						<Node id="255" />
 					</Group>
 					<Group index="2" max_associations="5" label="Basic - Local Load" auto="false" />
 					<Group index="3" max_associations="5" label="Basic - Double Tap" auto="false" />
@@ -610,6 +612,7 @@
 				<Associations num_groups="3">
 					<Group index="1" max_associations="5" label="Lifeline" auto="true">
 						<Node id="1" />
+						<Node id="255" />
 					</Group>
 					<Group index="2" max_associations="5" label="Basic - Local Load" auto="false" />
 					<Group index="3" max_associations="5" label="Basic - Double Tap" auto="false" />
@@ -714,6 +717,7 @@
 				<Associations num_groups="3">
 					<Group index="1" max_associations="5" label="Lifeline" auto="true">
 						<Node id="1" />
+						<Node id="255" />
 					</Group>
 					<Group index="2" max_associations="5" label="Basic - Local Load" auto="false" />
 					<Group index="3" max_associations="5" label="Basic - Double Tap" auto="false" />
@@ -818,6 +822,7 @@
 				<Associations num_groups="3">
 					<Group index="1" max_associations="5" label="Lifeline" auto="true">
 						<Node id="1" />
+						<Node id="255" />
 					</Group>
 					<Group index="2" max_associations="5" label="Basic - Local Load" auto="false" />
 					<Group index="3" max_associations="5" label="Basic - Double Tap" auto="false" />

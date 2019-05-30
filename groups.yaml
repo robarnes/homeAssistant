@@ -55,6 +55,8 @@ outside:
 #		Wemo1 (miniswitch) for lake pump
     -  light.level
 #		Front Porch
+    -  light.level_2
+#               Lake Lamp
     -  switch.switch
 #		Backyard Floods
 zwaveDevices:
