@@ -38,6 +38,8 @@ upstairs:
 #		Aidan LED Wall
     -  switch.wemo4
 #		Wemo4 (miniswitch) for Aidans Epoxy Lamp 
+    -  switch.wemo5
+#		Wemo5 (miniswitch) for living room lamp 
     -  switch.wemo3
 #		Wemo3 (miniswitch) for BackupWiFi
 downstairs:
@@ -53,6 +55,9 @@ outside:
     -  switch.garage_door_two
     -  switch.wemo1
 #		Wemo1 (miniswitch) for lake pump
+    -  input_boolean.lake_pump_30min
+    -  input_boolean.lake_pump_60min
+#               Button to kick off watering durations 
     -  light.level
 #		Front Porch
     -  light.level_2

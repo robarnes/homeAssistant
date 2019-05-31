@@ -50,8 +50,8 @@ wemo:
     - 192.168.0.182
     - 192.168.0.183
     - 192.168.0.184
-    - 192.168.0.185
-    - 192.168.0.186
+#    - 192.168.0.185  commented until plugged in
+#    - 192.168.0.186  commented until plugged in
 
 http:
   # Uncomment this to add a password (recommended!)
@@ -195,6 +195,16 @@ light:
     rgb_command_topic: '/upstairsFamilyRoom/statusLight/rgb/set'
     brightness_scale: 100
     optimistic: false
+
+input_boolean:
+  lake_pump_30min:
+    name: 30 minutes
+    initial: off
+    icon: mdi:water-pump
+  lake_pump_60min:
+    name: 60 minutes
+    initial: off
+    icon: mdi:water-pump
 
 group: !include groups.yaml
 

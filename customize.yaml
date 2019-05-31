@@ -45,14 +45,14 @@ switch.wemo4:
   icon: mdi:lava-lamp
 switch.wemo5:
 #		Wemo5 miniswitch
-  friendly_name:  Open
-  icon: mdi:sleep
+  friendly_name:  Living Room Lamp
+  icon: mdi:lamp
 switch.wemo6:
 #		Wemo6 miniswitch
   friendly_name:  Open
   icon: mdi:sleep
 switch.wemo7:
-#		Wemo3 miniswitch
+#		Wemo7 miniswitch
   friendly_name:  Open
   icon: mdi:sleep
 light.level_2:
