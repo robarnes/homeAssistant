@@ -198,11 +198,11 @@ light:
 
 input_boolean:
   lake_pump_30min:
-    name: 30 minutes
+    name: 1 hour 
     initial: off
     icon: mdi:water-pump
   lake_pump_60min:
-    name: 60 minutes
+    name: 5 hour
     initial: off
     icon: mdi:water-pump
 
