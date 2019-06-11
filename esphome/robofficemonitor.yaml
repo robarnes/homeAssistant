@@ -1,0 +1,33 @@
+esphome:
+  name: robofficemonitor
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: "myFlyWiFi"
+  password: "minicooper"
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: "killians1"
+
+ota:
+  password: "killians1"
+
+light:
+  - platform: fastled_clockless
+    chipset: WS2812B
+    pin: GPIO5
+    num_leds: 60
+    rgb_order: BRG
+    name: "Rob Office Monitor"
+    effects:
+      - flicker:
+      - random:
+      - strobe:
+      - addressable_rainbow:
+      - addressable_color_wipe:
+      - addressable_scan:

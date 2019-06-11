@@ -47,6 +47,8 @@ downstairs:
   entities:
     -  switch.wemo2
 #		Wemo2 (miniswitch) for amy heater
+    -  light.rob_office_monitor
+#               esp8266 for color behind rob office monitor
 outside:
   name: Outside
   control: hidden
