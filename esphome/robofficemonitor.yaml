@@ -22,7 +22,7 @@ light:
     chipset: WS2812B
     pin: GPIO5
     num_leds: 60
-    rgb_order: BRG
+    rgb_order: GRB
     name: "Rob Office Monitor"
     effects:
       - flicker:
