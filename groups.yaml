@@ -27,7 +27,7 @@ kitchen:
   entities:
     -  switch.switch_3
 #		Kitchen Recessed
-    -  switch.switch_4
+#    -  switch.switch_4 :: FAILED
 #		Kitchen Over Oven
     -  switch.switch_5
 #		Kitchen Chandalier
