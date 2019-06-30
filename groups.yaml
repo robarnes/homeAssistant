@@ -27,7 +27,7 @@ kitchen:
   entities:
     -  switch.switch_3
 #		Kitchen Recessed
-#    -  switch.switch_4 :: FAILED
+    -  switch.jasco_products_14292_in_wall_smart_toggle_switch_switch
 #		Kitchen Over Oven
     -  switch.switch_5
 #		Kitchen Chandalier

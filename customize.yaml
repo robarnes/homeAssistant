@@ -21,7 +21,7 @@ switch.switch:
 switch.switch_3:
   friendly_name:  Kitchen Recessed
   icon: mdi:lightbulb
-switch.switch_4:
+switch.jasco_products_14292_in_wall_smart_toggle_switch_switch:
   friendly_name:  Kitchen Stove
   icon: mdi:lightbulb
 switch.switch_5:
