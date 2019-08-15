@@ -36,6 +36,8 @@ upstairs:
   entities:
     -  switch.zooz_zen07_mini_plug_switch
 #		Aidan LED Wall
+    -  light.aidan_art
+#               Aidan Art Wall
     -  switch.wemo4
 #		Wemo4 (miniswitch) for Aidans Epoxy Lamp 
     -  switch.wemo5
@@ -77,6 +79,7 @@ cameras:
   name: cameras
   entities:
     - camera.front_door   
+    - camera.frontcam   
 iFrame_weather:
   name: ' '
   entities:

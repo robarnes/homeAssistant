@@ -31,6 +31,8 @@ config:
 # Show links to resources in log and frontend
 #introduction:
 
+ffmpg:
+
 # Enables the frontend
 frontend:
   extra_html_url:
@@ -102,6 +104,9 @@ camera:
     name: Front Door
     #username: admin
     #password: !secret camera_password 
+  - platform: ffmpeg
+    name: FrontCam
+    input: -rtsp_transport tcp -i rtsp://frontcam.widgetninja.net:8554/unicast
 
 twilio:
   account_sid: !secret twilio_account_sid
@@ -125,6 +130,8 @@ mqtt:
   client_id: home-assistant-1
   username: mosquitto 
   password: !secret mosquitto_password
+  discovery: true
+  discovery_prefix: homeassistant
 
 switch:
   - platform: mqtt
